@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3876BA481ADBC63F000A1F55 /* ZBarCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BA471ADBC63F000A1F55 /* ZBarCharts.m */; };
 		38852FA71AD7ABC200DDDEAD /* ZBarChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */; };
 		389B22531ACE755400A34A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B22521ACE755400A34A38 /* main.m */; };
 		389B22561ACE755400A34A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B22551ACE755400A34A38 /* AppDelegate.m */; };
@@ -15,7 +16,6 @@
 		389B225E1ACE755400A34A38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389B225D1ACE755400A34A38 /* Images.xcassets */; };
 		389B22611ACE755400A34A38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389B225F1ACE755400A34A38 /* LaunchScreen.xib */; };
 		389B226D1ACE755400A34A38 /* zChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B226C1ACE755400A34A38 /* zChartsTests.m */; };
-		38ABE19F1AD79CCC00558770 /* ZBarCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ABE19E1AD79CCC00558770 /* ZBarCharts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3876BA461ADBC63F000A1F55 /* ZBarCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCharts.h; sourceTree = "<group>"; };
+		3876BA471ADBC63F000A1F55 /* ZBarCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarCharts.m; sourceTree = "<group>"; };
 		38852FA51AD7ABC200DDDEAD /* ZBarChartsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarChartsScrollView.h; sourceTree = "<group>"; };
 		38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarChartsScrollView.m; sourceTree = "<group>"; };
 		389B224D1ACE755400A34A38 /* zCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +46,6 @@
 		389B22661ACE755400A34A38 /* zChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		389B226B1ACE755400A34A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389B226C1ACE755400A34A38 /* zChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zChartsTests.m; sourceTree = "<group>"; };
-		38ABE19D1AD79CCC00558770 /* ZBarCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCharts.h; sourceTree = "<group>"; };
-		38ABE19E1AD79CCC00558770 /* ZBarCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarCharts.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3876BA451ADBC63F000A1F55 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				3876BA461ADBC63F000A1F55 /* ZBarCharts.h */,
+				3876BA471ADBC63F000A1F55 /* ZBarCharts.m */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
 		389B22441ACE755400A34A38 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +138,7 @@
 		389B22761ACE758600A34A38 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				38ABE19D1AD79CCC00558770 /* ZBarCharts.h */,
-				38ABE19E1AD79CCC00558770 /* ZBarCharts.m */,
+				3876BA451ADBC63F000A1F55 /* Bar */,
 				38852FA51AD7ABC200DDDEAD /* ZBarChartsScrollView.h */,
 				38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */,
 			);
@@ -237,9 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38ABE19F1AD79CCC00558770 /* ZBarCharts.m in Sources */,
 				389B22591ACE755400A34A38 /* ViewController.m in Sources */,
 				38852FA71AD7ABC200DDDEAD /* ZBarChartsScrollView.m in Sources */,
+				3876BA481ADBC63F000A1F55 /* ZBarCharts.m in Sources */,
 				389B22561ACE755400A34A38 /* AppDelegate.m in Sources */,
 				389B22531ACE755400A34A38 /* main.m in Sources */,
 			);
