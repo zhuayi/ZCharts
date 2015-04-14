@@ -10,6 +10,10 @@
 
 @interface ZBarCharts : UIView
 
+/**
+ *  缩放比例
+ */
+@property(nonatomic, assign) CGFloat scale;
 
 /**
  *  数据
@@ -27,5 +31,10 @@
  */
 @property(nonatomic, assign) float duration;
 
+
+/**
+ *  数据最大值
+ */
+//@property(nonatomic, assign, readonly) CGFloat maxData;
 
 @end

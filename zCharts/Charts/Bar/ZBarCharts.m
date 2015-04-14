@@ -11,34 +11,10 @@
 
 #define kFrameRate 1/60.f
 
-/**
- *  比较两个参数数值大小
- *
- *  @param obj1 参数1
- *  @param obj2 参数2
- *
- *  @return NSComparator 对比结果
- */
-NSComparator cmptr = ^(id obj1, id obj2){
-    if ([obj1 integerValue] > [obj2 integerValue]) {
-        return (NSComparisonResult)NSOrderedDescending;
-    }
-    if ([obj1 integerValue] < [obj2 integerValue]) {
-        return (NSComparisonResult)NSOrderedAscending;
-    }
-    return (NSComparisonResult)NSOrderedSame;
-};
-
-
 @implementation ZBarCharts
 {
     CGContextRef _context;
 
-    /**
-     *  缩放比例
-     */
-    CGFloat _scale;
-    
     NSTimer *_timer;
     
     /**
@@ -84,18 +60,19 @@ NSComparator cmptr = ^(id obj1, id obj2){
  */
 - (void)drawRect:(CGRect)rect {
     _context = UIGraphicsGetCurrentContext();
+    [[UIColor blueColor] setFill];
     
     BOOL isStopAnimation = NO;
     
     for (int i = 0 ; i < _barData.count; i++) {
-        [[UIColor blueColor] setFill];
+        
         double height = [[_barData objectAtIndex:i] floatValue] * _scale;
         CGFloat y = [self getPostion:_currentTime fromValue:0 toValue:height duration:_duration];
         if (y < height) {
             isStopAnimation = YES;
         }
         
-        [self drawRectangle:CGRectMake(i * (_barWidth + 5), self.frame.size.height - y , _barWidth, height)];
+        [self drawRectangle:CGRectMake(i * (_barWidth + 5.0), self.frame.size.height - y, _barWidth, height)];
 
     }
     _currentTime++;
@@ -131,18 +108,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
 - (void)setBarData:(NSMutableArray *)barData {
     _barData = barData;
     
-    // 获取最大值
-    CGFloat maxData = [[[_barData sortedArrayUsingComparator:cmptr] lastObject] floatValue];
-    if (maxData > self.frame.size.height)
-    {
-        _scale = (((float)barData.count - 1) / (float)barData.count) / (maxData / self.frame.size.height);
-    }
-    else
-    {
-        _scale = (((float)barData.count - 1) / (float)barData.count);
-    }
     
-    NSLog(@"maxData : %f", _scale);
 }
 
 /**
@@ -152,7 +118,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
  */
 - (void)drawRectangle:(CGRect)rect {
     CGContextSetLineWidth(_context, 0.0);
-    CGMutablePathRef pathRef = [self pathwithFrame:rect withRadius:3];
+    CGMutablePathRef pathRef = [self pathwithFrame:rect withRadius:0];
     
     CGContextAddPath(_context, pathRef);
     CGContextDrawPath(_context,kCGPathFillStroke);

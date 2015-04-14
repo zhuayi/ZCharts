@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3876BA481ADBC63F000A1F55 /* ZBarCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BA471ADBC63F000A1F55 /* ZBarCharts.m */; };
+		3876BA4E1ADBD975000A1F55 /* ZChartsBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BA4D1ADBD975000A1F55 /* ZChartsBaseView.m */; };
 		38852FA71AD7ABC200DDDEAD /* ZBarChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */; };
+		388A4B081ADBF961009C50EA /* ZChartsBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388A4B071ADBF961009C50EA /* ZChartsBackgroundView.m */; };
 		389B22531ACE755400A34A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B22521ACE755400A34A38 /* main.m */; };
 		389B22561ACE755400A34A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B22551ACE755400A34A38 /* AppDelegate.m */; };
 		389B22591ACE755400A34A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B22581ACE755400A34A38 /* ViewController.m */; };
@@ -31,8 +33,12 @@
 /* Begin PBXFileReference section */
 		3876BA461ADBC63F000A1F55 /* ZBarCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCharts.h; sourceTree = "<group>"; };
 		3876BA471ADBC63F000A1F55 /* ZBarCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarCharts.m; sourceTree = "<group>"; };
+		3876BA4C1ADBD975000A1F55 /* ZChartsBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBaseView.h; sourceTree = "<group>"; };
+		3876BA4D1ADBD975000A1F55 /* ZChartsBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBaseView.m; sourceTree = "<group>"; };
 		38852FA51AD7ABC200DDDEAD /* ZBarChartsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarChartsScrollView.h; sourceTree = "<group>"; };
 		38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarChartsScrollView.m; sourceTree = "<group>"; };
+		388A4B061ADBF961009C50EA /* ZChartsBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBackgroundView.h; sourceTree = "<group>"; };
+		388A4B071ADBF961009C50EA /* ZChartsBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBackgroundView.m; sourceTree = "<group>"; };
 		389B224D1ACE755400A34A38 /* zCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389B22511ACE755400A34A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389B22521ACE755400A34A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 				3876BA451ADBC63F000A1F55 /* Bar */,
 				38852FA51AD7ABC200DDDEAD /* ZBarChartsScrollView.h */,
 				38852FA61AD7ABC200DDDEAD /* ZBarChartsScrollView.m */,
+				388A4B061ADBF961009C50EA /* ZChartsBackgroundView.h */,
+				388A4B071ADBF961009C50EA /* ZChartsBackgroundView.m */,
+				3876BA4C1ADBD975000A1F55 /* ZChartsBaseView.h */,
+				3876BA4D1ADBD975000A1F55 /* ZChartsBaseView.m */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -248,7 +258,9 @@
 				389B22591ACE755400A34A38 /* ViewController.m in Sources */,
 				38852FA71AD7ABC200DDDEAD /* ZBarChartsScrollView.m in Sources */,
 				3876BA481ADBC63F000A1F55 /* ZBarCharts.m in Sources */,
+				3876BA4E1ADBD975000A1F55 /* ZChartsBaseView.m in Sources */,
 				389B22561ACE755400A34A38 /* AppDelegate.m in Sources */,
+				388A4B081ADBF961009C50EA /* ZChartsBackgroundView.m in Sources */,
 				389B22531ACE755400A34A38 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
