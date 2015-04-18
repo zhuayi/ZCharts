@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'ZCharts', :exclusive => true do
+  pod "ZCharts", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "ZCharts", :path => "../"
+
+  
+end
