@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385BC7DD1AE299CB00F82598 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 385BC7CF1AE299CB00F82598 /* .gitkeep */; };
+		385BC7DE1AE299CB00F82598 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 385BC7D11AE299CB00F82598 /* .gitkeep */; };
+		385BC7DF1AE299CB00F82598 /* ZChartsBarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D41AE299CB00F82598 /* ZChartsBarDrawView.m */; };
+		385BC7E01AE299CB00F82598 /* ZChartsBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */; };
+		385BC7E11AE299CB00F82598 /* ZChartsBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */; };
+		385BC7E21AE299CB00F82598 /* ZChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7DA1AE299CB00F82598 /* ZChartsModel.m */; };
+		385BC7E31AE299CB00F82598 /* ZChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7DC1AE299CB00F82598 /* ZChartsScrollView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +45,18 @@
 
 /* Begin PBXFileReference section */
 		02B18AA7BC8E2257926889A6 /* libPods-ZCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		385BC7CF1AE299CB00F82598 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		385BC7D11AE299CB00F82598 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		385BC7D31AE299CB00F82598 /* ZChartsBarDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBarDrawView.h; sourceTree = "<group>"; };
+		385BC7D41AE299CB00F82598 /* ZChartsBarDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBarDrawView.m; sourceTree = "<group>"; };
+		385BC7D51AE299CB00F82598 /* ZChartsBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBackgroundView.h; sourceTree = "<group>"; };
+		385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBackgroundView.m; sourceTree = "<group>"; };
+		385BC7D71AE299CB00F82598 /* ZChartsBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBaseView.h; sourceTree = "<group>"; };
+		385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBaseView.m; sourceTree = "<group>"; };
+		385BC7D91AE299CB00F82598 /* ZChartsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsModel.h; sourceTree = "<group>"; };
+		385BC7DA1AE299CB00F82598 /* ZChartsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsModel.m; sourceTree = "<group>"; };
+		385BC7DB1AE299CB00F82598 /* ZChartsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsScrollView.h; sourceTree = "<group>"; };
+		385BC7DC1AE299CB00F82598 /* ZChartsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsScrollView.m; sourceTree = "<group>"; };
 		463C142D36BD2709727CD575 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		483D95F3747DDCCF0B76369F /* Pods-ZCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCharts.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCharts/Pods-ZCharts.release.xcconfig"; sourceTree = "<group>"; };
 		540C88F8DFB846FD7712DCC8 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +114,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385BC7CD1AE299CB00F82598 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				385BC7CE1AE299CB00F82598 /* Assets */,
+				385BC7D01AE299CB00F82598 /* Classes */,
+			);
+			name = Pod;
+			path = ../../Pod;
+			sourceTree = "<group>";
+		};
+		385BC7CE1AE299CB00F82598 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				385BC7CF1AE299CB00F82598 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		385BC7D01AE299CB00F82598 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				385BC7D11AE299CB00F82598 /* .gitkeep */,
+				385BC7D21AE299CB00F82598 /* Bar */,
+				385BC7D51AE299CB00F82598 /* ZChartsBackgroundView.h */,
+				385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */,
+				385BC7D71AE299CB00F82598 /* ZChartsBaseView.h */,
+				385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */,
+				385BC7D91AE299CB00F82598 /* ZChartsModel.h */,
+				385BC7DA1AE299CB00F82598 /* ZChartsModel.m */,
+				385BC7DB1AE299CB00F82598 /* ZChartsScrollView.h */,
+				385BC7DC1AE299CB00F82598 /* ZChartsScrollView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		385BC7D21AE299CB00F82598 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				385BC7D31AE299CB00F82598 /* ZChartsBarDrawView.h */,
+				385BC7D41AE299CB00F82598 /* ZChartsBarDrawView.m */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
 		5930DAB285B42BF58A406529 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +206,7 @@
 		6003F593195388D20070C39A /* ZCharts */ = {
 			isa = PBXGroup;
 			children = (
+				385BC7CD1AE299CB00F82598 /* Pod */,
 				6003F59C195388D20070C39A /* ZAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
@@ -278,6 +342,8 @@
 			files = (
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				385BC7DD1AE299CB00F82598 /* .gitkeep in Resources */,
+				385BC7DE1AE299CB00F82598 /* .gitkeep in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -361,9 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385BC7DF1AE299CB00F82598 /* ZChartsBarDrawView.m in Sources */,
+				385BC7E21AE299CB00F82598 /* ZChartsModel.m in Sources */,
+				385BC7E01AE299CB00F82598 /* ZChartsBackgroundView.m in Sources */,
 				6003F59E195388D20070C39A /* ZAppDelegate.m in Sources */,
+				385BC7E11AE299CB00F82598 /* ZChartsBaseView.m in Sources */,
 				6003F5A7195388D20070C39A /* ZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				385BC7E31AE299CB00F82598 /* ZChartsScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

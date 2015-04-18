@@ -12,17 +12,12 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A short description of ZCharts."
   s.description      = <<-DESC
-                       An optional longer description of ZCharts
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       基于drawRect的 一款柱状图
                        DESC
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/ZCharts"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "renxin" => "renxin@baidu.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ZCharts.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "zhuayi" => "2179942@qq.com" }
+  s.source           = { :git => "https://github.com/zhuayi/ZCharts.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
