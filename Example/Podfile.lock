@@ -1,0 +1,14 @@
+PODS:
+  - ZCharts (0.1.0)
+
+DEPENDENCIES:
+  - ZCharts (from `../`)
+
+EXTERNAL SOURCES:
+  ZCharts:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZCharts: 4c610e29c820a10967dea8262860ee736b149cf3
+
+COCOAPODS: 0.36.0.rc.1

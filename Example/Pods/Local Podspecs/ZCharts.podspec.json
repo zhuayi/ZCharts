@@ -1,0 +1,25 @@
+{
+  "name": "ZCharts",
+  "version": "0.1.0",
+  "summary": "A short description of ZCharts.",
+  "description": "                       An optional longer description of ZCharts\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ZCharts",
+  "license": "MIT",
+  "authors": {
+    "renxin": "renxin@baidu.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ZCharts.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ZCharts": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
