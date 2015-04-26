@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZChartsBarDrawView.h"
+#import "ZChartsKit.h"
+
+@class ZChartsBarDrawView;
 
 @interface ZChartsScrollView : UIScrollView
+
+/**
+ *  视图样式
+ */
+@property(nonatomic, weak) ZChartsStyle *zChartsStyle;
 
 /**
  *  柱状图 view

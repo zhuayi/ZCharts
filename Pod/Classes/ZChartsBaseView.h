@@ -7,11 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZChartsScrollView.h"
-#import "ZChartsBackgroundView.h"
-#import "ZChartsModel.h"
+#import "ZChartsKit.h"
+@class ZChartsStyle;
+@class ZChartsScrollView;
+@class ZChartsDegreeView;
+@class ZChartsModel;
+@protocol ZChartsBaseViewDelegate <NSObject>
+
+- (void)scrollViewDidScroll:(CGFloat)contentOffsetScale  zChartsModel:(ZChartsModel *)zChartsModel;
+
+@end
+
 
 @interface ZChartsBaseView : UIView<UIScrollViewDelegate>
+
+@property(nonatomic, weak) id<ZChartsBaseViewDelegate> delegate;
+
+- (instancetype)initWithFrame:(CGRect)frame zChartsStyle:(ZChartsStyle *)zChartsStyle;
+
+/**
+ *  视图样式
+ */
+@property(nonatomic, strong) ZChartsStyle *zChartsStyle;
+
 
 /**
  *  柱状图Scrollview
@@ -19,33 +37,15 @@
 @property(nonatomic, strong) ZChartsScrollView *zChartsScrollView;
 
 
-@property(nonatomic, strong) ZChartsBackgroundView *zchartsBackgroundView;
+@property(nonatomic, strong) ZChartsDegreeView *zchartsDegreeView;
 
-/**
- *  绘制层距离的间距
- */
-@property(nonatomic, assign) CGPoint chartsViewMargin;
 
-/**
- *  缩放比例
- */
-@property(nonatomic, assign) CGFloat scale;
 
 /**
  *  数据
  */
 @property(nonatomic, strong) NSMutableArray *legendData;
 
-
-/**
- *  趋势线条颜色
- */
-@property(nonatomic, assign) CGColorRef lineColor;
-
-/**
- *  趋势文字颜色
- */
-@property(nonatomic, strong) UIColor *drawTextColor;
 
 
 @end

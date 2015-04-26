@@ -18,7 +18,7 @@
 /**
  *  分类
  */
-@property(nonatomic, strong) NSString *category;
+@property(nonatomic, strong) NSString *key;
 
 /**
  *  坐标

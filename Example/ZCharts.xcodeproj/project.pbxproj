@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3826A69A1AEBDDB70014E160 /* ZChartsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826A6991AEBDDB70014E160 /* ZChartsStyle.m */; };
+		3826A69E1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826A69D1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.m */; };
 		385BC7DD1AE299CB00F82598 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 385BC7CF1AE299CB00F82598 /* .gitkeep */; };
 		385BC7DE1AE299CB00F82598 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 385BC7D11AE299CB00F82598 /* .gitkeep */; };
 		385BC7DF1AE299CB00F82598 /* ZChartsBarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D41AE299CB00F82598 /* ZChartsBarDrawView.m */; };
-		385BC7E01AE299CB00F82598 /* ZChartsBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */; };
+		385BC7E01AE299CB00F82598 /* ZChartsDegreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D61AE299CB00F82598 /* ZChartsDegreeView.m */; };
 		385BC7E11AE299CB00F82598 /* ZChartsBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */; };
 		385BC7E21AE299CB00F82598 /* ZChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7DA1AE299CB00F82598 /* ZChartsModel.m */; };
 		385BC7E31AE299CB00F82598 /* ZChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BC7DC1AE299CB00F82598 /* ZChartsScrollView.m */; };
@@ -45,12 +47,17 @@
 
 /* Begin PBXFileReference section */
 		02B18AA7BC8E2257926889A6 /* libPods-ZCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3826A6981AEBDDB70014E160 /* ZChartsStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsStyle.h; sourceTree = "<group>"; };
+		3826A6991AEBDDB70014E160 /* ZChartsStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsStyle.m; sourceTree = "<group>"; };
+		3826A69B1AEBDE270014E160 /* ZChartsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZChartsKit.h; sourceTree = "<group>"; };
+		3826A69C1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZChartsBarDrawView+Custom.h"; sourceTree = "<group>"; };
+		3826A69D1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZChartsBarDrawView+Custom.m"; sourceTree = "<group>"; };
 		385BC7CF1AE299CB00F82598 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		385BC7D11AE299CB00F82598 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		385BC7D31AE299CB00F82598 /* ZChartsBarDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBarDrawView.h; sourceTree = "<group>"; };
 		385BC7D41AE299CB00F82598 /* ZChartsBarDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBarDrawView.m; sourceTree = "<group>"; };
-		385BC7D51AE299CB00F82598 /* ZChartsBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBackgroundView.h; sourceTree = "<group>"; };
-		385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBackgroundView.m; sourceTree = "<group>"; };
+		385BC7D51AE299CB00F82598 /* ZChartsDegreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsDegreeView.h; sourceTree = "<group>"; };
+		385BC7D61AE299CB00F82598 /* ZChartsDegreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsDegreeView.m; sourceTree = "<group>"; };
 		385BC7D71AE299CB00F82598 /* ZChartsBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsBaseView.h; sourceTree = "<group>"; };
 		385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZChartsBaseView.m; sourceTree = "<group>"; };
 		385BC7D91AE299CB00F82598 /* ZChartsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZChartsModel.h; sourceTree = "<group>"; };
@@ -137,14 +144,17 @@
 			children = (
 				385BC7D11AE299CB00F82598 /* .gitkeep */,
 				385BC7D21AE299CB00F82598 /* Bar */,
-				385BC7D51AE299CB00F82598 /* ZChartsBackgroundView.h */,
-				385BC7D61AE299CB00F82598 /* ZChartsBackgroundView.m */,
+				385BC7D51AE299CB00F82598 /* ZChartsDegreeView.h */,
+				385BC7D61AE299CB00F82598 /* ZChartsDegreeView.m */,
 				385BC7D71AE299CB00F82598 /* ZChartsBaseView.h */,
 				385BC7D81AE299CB00F82598 /* ZChartsBaseView.m */,
 				385BC7D91AE299CB00F82598 /* ZChartsModel.h */,
 				385BC7DA1AE299CB00F82598 /* ZChartsModel.m */,
 				385BC7DB1AE299CB00F82598 /* ZChartsScrollView.h */,
 				385BC7DC1AE299CB00F82598 /* ZChartsScrollView.m */,
+				3826A6981AEBDDB70014E160 /* ZChartsStyle.h */,
+				3826A6991AEBDDB70014E160 /* ZChartsStyle.m */,
+				3826A69B1AEBDE270014E160 /* ZChartsKit.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -213,6 +223,8 @@
 				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
 				6003F5A5195388D20070C39A /* ZViewController.h */,
 				6003F5A6195388D20070C39A /* ZViewController.m */,
+				3826A69C1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.h */,
+				3826A69D1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -429,9 +441,11 @@
 			files = (
 				385BC7DF1AE299CB00F82598 /* ZChartsBarDrawView.m in Sources */,
 				385BC7E21AE299CB00F82598 /* ZChartsModel.m in Sources */,
-				385BC7E01AE299CB00F82598 /* ZChartsBackgroundView.m in Sources */,
+				385BC7E01AE299CB00F82598 /* ZChartsDegreeView.m in Sources */,
+				3826A69E1AEBF50E0014E160 /* ZChartsBarDrawView+Custom.m in Sources */,
 				6003F59E195388D20070C39A /* ZAppDelegate.m in Sources */,
 				385BC7E11AE299CB00F82598 /* ZChartsBaseView.m in Sources */,
+				3826A69A1AEBDDB70014E160 /* ZChartsStyle.m in Sources */,
 				6003F5A7195388D20070C39A /* ZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				385BC7E31AE299CB00F82598 /* ZChartsScrollView.m in Sources */,

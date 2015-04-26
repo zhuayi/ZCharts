@@ -23,10 +23,10 @@
     float _currentTime;
 }
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     if (self) {
-        _duration = 1.2;
+        [self starAnimation];
     }
     return self;
 }
@@ -52,6 +52,13 @@
     }
 }
 
+- (ZChartsStyle *)zChartsStyle {
+    if (!_zChartsStyle) {
+        _zChartsStyle = [[ZChartsStyle alloc] init];
+    }
+    return _zChartsStyle;
+}
+
 /**
  * 绘制
  *
@@ -63,19 +70,28 @@
     BOOL isStopAnimation = NO;
     
     for (ZChartsModel *modes in _barData) {
-        CGFloat y = [self getPostion:_currentTime fromValue:0 toValue:modes.point.y duration:_duration];
+        
+        [[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2] setFill];
+        CGRect frame2 = CGRectMake(modes.point.x, 0, _zChartsStyle.barWidth, self.frame.size.height);
+        [self drawRectangle:frame2 lineWidth:0.0];
+        
+        CGFloat y = [self getPostion:_currentTime fromValue:0 toValue:modes.point.y duration:_zChartsStyle.duration];
         if (y < modes.point.y) {
             isStopAnimation = YES;
         }
         
-        CGRect frame = CGRectMake(modes.point.x, self.frame.size.height - y, _barWidth, modes.point.y);
+        CGRect frame = CGRectMake(modes.point.x, self.frame.size.height - y, _zChartsStyle.barWidth, modes.point.y);
+        
         CGFloat lineWidth = 0.0;
-        [[UIColor blueColor] setFill];
         if (modes.isSelect) {
-            
             lineWidth = 1.5;
-            
         }
+        
+        if ([self respondsToSelector:@selector(drawCustom:)]) {
+            
+            [self performSelector:@selector(drawCustom:) withObject:modes];
+        }
+        
         [self drawRectangle:frame lineWidth:lineWidth];
     }
     _currentTime++;
@@ -101,15 +117,15 @@
 }
 
 
-/**
- *  设置柱状图数据
- *
- *  @param barData 柱状图数据
- */
-- (void)setBarData:(NSMutableArray *)barData {
-    _barData = barData;
-    [self starAnimation];
-}
+///**
+// *  设置柱状图数据
+// *
+// *  @param barData 柱状图数据
+// */
+//- (void)setBarData:(NSMutableArray *)barData {
+//    _barData = barData;
+//    [self starAnimation];
+//}
 
 /**
  *  绘制矩形

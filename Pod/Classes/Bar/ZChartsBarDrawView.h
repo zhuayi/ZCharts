@@ -7,29 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ZChartsKit.h"
 @interface ZChartsBarDrawView : UIView
+
+/**
+ *  视图样式
+ */
+@property(nonatomic, strong) ZChartsStyle *zChartsStyle;
+
 
 /**
  *  数据
  */
-@property(nonatomic, strong) NSMutableArray *barData;
+@property(nonatomic, weak) NSMutableArray *barData;
 
-
-/**
- *  柱状宽度
- */
-@property(nonatomic, assign) CGFloat barWidth;
-
-/**
- *  动画时间. 默认0.4s
- */
-@property(nonatomic, assign) float duration;
-
-
-/**
- *  数据最大值
- */
-//@property(nonatomic, assign, readonly) CGFloat maxData;
 
 @end
