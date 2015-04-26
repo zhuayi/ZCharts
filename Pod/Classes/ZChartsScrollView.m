@@ -17,36 +17,35 @@
         
         self.showsHorizontalScrollIndicator = NO;
         self.showsVerticalScrollIndicator = NO;
+        
+        _barChartsView = [[ZChartsBarDrawView alloc] initWithFrame:frame];
+        _barChartsView.backgroundColor = [UIColor clearColor];
+        [self addSubview:_barChartsView];
     }
     return self;
 }
 
 
 - (void)setContentSize:(CGSize)contentSize {
-    
+    [super setContentSize:contentSize];
     
     if (contentSize.width < self.frame.size.width) {
         contentSize.width = self.frame.size.width;
     }
-    _barChartsView = [[ZChartsBarDrawView alloc] initWithFrame:CGRectMake(0, 0, contentSize.width, contentSize.height)];
+    _barChartsView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
     _barChartsView.zChartsStyle =_zChartsStyle;
-    [self addSubview:_barChartsView];
-    _barChartsView.backgroundColor = [UIColor clearColor];
-    _barChartsView.barData = _barData;
-
+    
     [self setContentOffset:CGPointMake(self.contentSize.width - self.frame.size.width, 0) animated:NO];
     
-//    contentSize.width += 20 * 3;
-    [super setContentSize:contentSize];
 }
 
-
-- (void)setBarData:(NSMutableArray *)barData {
+- (NSMutableArray *)barData {
     if (!_barData) {
-
+        
         _barData = [NSMutableArray arrayWithCapacity:0];
     }
-    _barData = barData;
+    _barChartsView.barData = _barData;
+    return _barData;
 }
 
 @end

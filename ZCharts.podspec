@@ -10,11 +10,11 @@
 Pod::Spec.new do |s|
   s.name             = "ZCharts"
   s.version          = "0.2.0"
-  s.summary          = "A short description of ZCharts."
+  s.summary          = "基于drawRect的 一款柱状图."
   s.description      = <<-DESC
                        基于drawRect的 一款柱状图
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ZCharts"
+  s.homepage         = "https://github.com/zhuayi/ZCharts.git"
   s.license          = 'MIT'
   s.author           = { "zhuayi" => "2179942@qq.com" }
   s.source           = { :git => "https://github.com/zhuayi/ZCharts.git", :tag => s.version.to_s }
@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ZCalendar', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
 end

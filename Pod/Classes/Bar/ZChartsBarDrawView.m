@@ -132,7 +132,7 @@
  *
  *  @param rect 矩形尺寸
  */
-- (void)drawRectangle:(CGRect)rect lineWidth:(CGFloat)lineWidth{
+- (void)drawRectangle:(CGRect)rect lineWidth:(CGFloat)lineWidth {
     
     UIColor *aColor = [UIColor whiteColor];
     CGContextSetStrokeColorWithColor(_context, aColor.CGColor);//线框颜色
@@ -154,8 +154,7 @@
  *
  *  @return CGMutablePathRef 矩形路径
  */
-- (CGMutablePathRef)pathwithFrame:(CGRect)frame withRadius:(float)radius
-{
+- (CGMutablePathRef)pathwithFrame:(CGRect)frame withRadius:(float)radius {
     CGPoint x1, x2, x3, x4; //x为4个顶点
     CGPoint y1, y2, y3, y4, y5, y6, y7, y8; //y为4个控制点
     //从左上角顶点开始，顺时针旋转,x1->y1->y2->x2
