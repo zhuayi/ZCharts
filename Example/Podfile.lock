@@ -1,14 +1,24 @@
 PODS:
-  - ZCharts (0.1.0)
+  - UIView-ZQuartz (0.1.0)
+  - ZCharts (0.2.0)
 
 DEPENDENCIES:
+  - UIView-ZQuartz (from `https://github.com/zhuayi/UIView-ZQuartz.git`)
   - ZCharts (from `../`)
 
 EXTERNAL SOURCES:
+  UIView-ZQuartz:
+    :git: https://github.com/zhuayi/UIView-ZQuartz.git
   ZCharts:
     :path: ../
 
-SPEC CHECKSUMS:
-  ZCharts: 4c610e29c820a10967dea8262860ee736b149cf3
+CHECKOUT OPTIONS:
+  UIView-ZQuartz:
+    :commit: 5b23cd2615e6ede6287a49b5012e7bbe0d9d6ea0
+    :git: https://github.com/zhuayi/UIView-ZQuartz.git
 
-COCOAPODS: 0.36.0.rc.1
+SPEC CHECKSUMS:
+  UIView-ZQuartz: ad8b719d472333246997efe60ca05f2bcd3d1895
+  ZCharts: b43ae5f392368ce67089015f56023f380d2b5749
+
+COCOAPODS: 0.37.0.beta.1

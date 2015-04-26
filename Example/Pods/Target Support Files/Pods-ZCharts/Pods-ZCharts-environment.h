@@ -6,9 +6,15 @@
 // project.
 
 
+// UIView-ZQuartz
+#define COCOAPODS_POD_AVAILABLE_UIView_ZQuartz
+#define COCOAPODS_VERSION_MAJOR_UIView_ZQuartz 0
+#define COCOAPODS_VERSION_MINOR_UIView_ZQuartz 1
+#define COCOAPODS_VERSION_PATCH_UIView_ZQuartz 0
+
 // ZCharts
 #define COCOAPODS_POD_AVAILABLE_ZCharts
 #define COCOAPODS_VERSION_MAJOR_ZCharts 0
-#define COCOAPODS_VERSION_MINOR_ZCharts 1
+#define COCOAPODS_VERSION_MINOR_ZCharts 2
 #define COCOAPODS_VERSION_PATCH_ZCharts 0
 

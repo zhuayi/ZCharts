@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ZCalendar', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
+  s.dependency 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
 end

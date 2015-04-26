@@ -2,7 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ZCharts', :exclusive => true do
   pod "ZCharts", :path => "../"
-
+  
+  ## 绘制库
+  pod 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
 end
 
 target 'Tests', :exclusive => true do
