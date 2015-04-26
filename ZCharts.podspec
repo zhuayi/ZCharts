@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZCharts"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "基于drawRect的 一款柱状图."
   s.description      = <<-DESC
                        基于drawRect的 一款柱状图
@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
+  #s.dependency 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
 end
