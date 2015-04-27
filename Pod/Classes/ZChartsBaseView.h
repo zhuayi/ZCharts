@@ -40,12 +40,18 @@
 @property(nonatomic, strong) ZChartsDegreeView *zchartsDegreeView;
 
 
-
 /**
  *  数据
  */
 @property(nonatomic, strong) NSMutableArray *legendData;
 
+
+/**
+ *  滚动到第几个柱子
+ *
+ *  @param barIndex 柱子索引
+ */
+- (void)scrollToItemAtBarIndex:(NSInteger)barIndex;
 
 
 @end

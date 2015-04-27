@@ -129,6 +129,18 @@ NSComparator cmptr = ^(id obj1, id obj2){
     [_delegate scrollViewDidScroll:contentOffsetScale zChartsModel:selectZChartsModel];
 }
 
+/**
+ *  滚动到第几个柱子
+ *
+ *  @param barIndex 柱子索引
+ */
+- (void)scrollToItemAtBarIndex:(NSInteger)barIndex {
+    
+    CGFloat left = barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count);
+    [_zChartsScrollView setContentOffset:CGPointMake(left + _zChartsStyle.barWidth / 2 , 0) animated:YES];
+}
+
+
 #pragma mark - scrollViewdelegate
 -(void)scrollViewDidScroll:(UIScrollView*)scrollView {
     

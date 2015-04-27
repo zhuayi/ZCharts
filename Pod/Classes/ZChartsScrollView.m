@@ -35,10 +35,6 @@
     _barChartsView.zChartsStyle =_zChartsStyle;
     
     [super setContentSize:CGSizeMake(contentSize.width + _zChartsStyle.padding*2, contentSize.height)];
-    
-    self.contentOffset = CGPointMake(0, 0);
-    [self setContentOffset:CGPointMake(self.contentSize.width - self.frame.size.width , 0) animated:NO];
-    
 }
 
 
@@ -47,13 +43,5 @@
     _barChartsView.barData = _barData;
 }
 
-//- (NSMutableArray *)barData {
-//    if (!_barData) {
-//        
-//        _barData = [NSMutableArray arrayWithCapacity:0];
-//    }
-//    _barChartsView.barData = _barData;
-//    return _barData;
-//}
 
 @end

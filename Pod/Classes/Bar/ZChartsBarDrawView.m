@@ -14,7 +14,7 @@
 @implementation ZChartsBarDrawView
 {
     CGContextRef _context;
-
+    
     NSTimer *_timer;
     
     /**
@@ -45,7 +45,7 @@
  */
 - (void)stopAnimation {
     NSLog(@"stopAnimation");
-   
+    
     if (_timer) {
         [_timer invalidate];
         _timer = nil;
@@ -61,7 +61,7 @@
 
 - (void)setBarData:(NSMutableArray *)barData {
     _barData = barData;
-     _currentTime = 0;
+    _currentTime = 0;
     [self starAnimation];
 }
 
@@ -72,12 +72,12 @@
  */
 - (void)drawRect:(CGRect)rect {
     _context = UIGraphicsGetCurrentContext();
-
+    
     BOOL isStopAnimation = NO;
     
     for (ZChartsModel *modes in _barData) {
         
-        [[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2] setFill];
+        [[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.05] setFill];
         CGRect frame2 = CGRectMake(modes.point.x, 0, _zChartsStyle.barWidth, self.frame.size.height);
         [self drawRectangle:frame2 lineWidth:0.0 color:[UIColor whiteColor]];
         
