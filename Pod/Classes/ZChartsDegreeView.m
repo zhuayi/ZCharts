@@ -7,7 +7,7 @@
 //
 
 #import "ZChartsDegreeView.h"
-
+#import "UIView+ZQuartz.h"
 @implementation ZChartsDegreeView {
     CGContextRef _context;
 }
@@ -36,16 +36,15 @@
             height = 0;
         }
         
-        [self drawText:CGPointMake(self.frame.size.width - size.width, height) text:text];
+        [self drawText:CGPointMake(self.frame.size.width - size.width, height) text:text fontSize:_zChartsStyle.degreeViewFontStyle];
     }
 }
 
-
-- (void)drawText:(CGPoint)point text:(NSString *)text
-{
-    // 兼容不同长度的字符串
-    [text drawAtPoint:point withAttributes:_zChartsStyle.degreeViewFontStyle];
+- (void)setMaxValue:(int)maxValue {
+    _maxValue = maxValue;
+    [self setNeedsDisplay];
 }
+
 
 
 @end

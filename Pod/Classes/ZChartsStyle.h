@@ -27,6 +27,11 @@
 
 
 /**
+ *
+ */
+@property(nonatomic, assign) CGFloat padding;
+
+/**
  * 显示几行刻度
  */
 @property(nonatomic, assign) NSInteger rowCount;

@@ -26,7 +26,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self starAnimation];
+        
     }
     return self;
 }
@@ -45,7 +45,7 @@
  */
 - (void)stopAnimation {
     NSLog(@"stopAnimation");
-//    _currentTime = 0;
+   
     if (_timer) {
         [_timer invalidate];
         _timer = nil;
@@ -57,6 +57,12 @@
         _zChartsStyle = [[ZChartsStyle alloc] init];
     }
     return _zChartsStyle;
+}
+
+- (void)setBarData:(NSMutableArray *)barData {
+    _barData = barData;
+     _currentTime = 0;
+    [self starAnimation];
 }
 
 /**

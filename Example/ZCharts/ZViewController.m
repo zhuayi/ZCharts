@@ -19,6 +19,7 @@
     zChartsStyle.degreeViewWidth = 20;
     zChartsStyle.rowCount = 5;
     zChartsStyle.barWidth = 10;
+    zChartsStyle.padding = 50;
     zChartsStyle.duration = 1.2;
     zChartsStyle.degreeViewFontStyle = @{
                                          NSFontAttributeName: [UIFont systemFontOfSize:12.0],
@@ -37,11 +38,7 @@
         NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%ld", (long)i], @"value":value};
         [data addObject:dict];
     }
-    
-    NSString *value = [NSString stringWithFormat:@"%d", -1];
-    NSDictionary *dict = @{ @"key":@"空", @"value":value};
-    [data addObject:dict];
-    
+
     zChartsView.legendData = data;
     
     
@@ -66,14 +63,15 @@
 - (void)resetData {
     
     NSMutableArray *data = [NSMutableArray arrayWithCapacity:0];
-    for (int i = 0 ; i< 24; i++) {
+    for (int i = 0 ; i< 24 * 7; i++) {
         
-        NSString *value = [NSString stringWithFormat:@"%d",[self getRandomNumber:0 to:500]];
-        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%d", i], @"value":value};
+        NSString *value = [NSString stringWithFormat:@"%d", [self getRandomNumber:500 to:1000]];
+        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%ld", (long)i], @"value":value};
         [data addObject:dict];
     }
+
     zChartsView.legendData = data;
-    //    [zChartsView setNeedsDisplay];
+    [zChartsView setNeedsDisplay];
 }
 
 #pragma mark 

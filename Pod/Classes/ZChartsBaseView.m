@@ -64,10 +64,10 @@ NSComparator cmptr = ^(id obj1, id obj2){
     }
     return _zChartsStyle;
 }
+
 - (void)setLegendData:(NSMutableArray *)legendData {
-    if (!_legendData) {
-        _legendData = legendData;
-    }
+    _legendData = legendData;
+    
     // 获取最大值
     CGFloat maxData = [[[[_legendData sortedArrayUsingComparator:cmptr] lastObject] objectForKey:@"value"] floatValue];
     NSString *maxDataString = [NSString stringWithFormat:@"%0.f", maxData];
@@ -87,11 +87,9 @@ NSComparator cmptr = ^(id obj1, id obj2){
         [array addObject:models];
     }
     _zChartsScrollView.barData = array;
-    
     _zChartsScrollView.contentSize = CGSizeMake(_legendData.count * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), self.frame.size.height);
-    
     _zchartsDegreeView.maxValue = maxData;
-
+    
 }
 
 /**
@@ -101,13 +99,22 @@ NSComparator cmptr = ^(id obj1, id obj2){
  */
 - (void)setPaopaoViewX:(UIScrollView*)scrollView {
     
-    CGFloat maxContentOffset = scrollView.contentSize.width - scrollView.frame.size.width;
-    CGFloat contentOffsetScale = scrollView.contentOffset.x / maxContentOffset;
+    CGFloat maxContentOffset = scrollView.contentSize.width  - scrollView.frame.size.width;
+    CGFloat contentOffsetScale = (scrollView.contentOffset.x ) / maxContentOffset;
     
     ZChartsModel *selectZChartsModel = [[ZChartsModel alloc] init];
+    
     // 当前坐标点
-    float currentX = scrollView.contentOffset.x + scrollView.frame.size.width * contentOffsetScale;
-    NSLog(@"currentX : %f", currentX);
+    float currentX = scrollView.contentOffset.x + (scrollView.frame.size.width - _zChartsStyle.padding * 2) * contentOffsetScale;
+    
+    if (currentX < 0) {
+        
+        currentX = 0 ;
+    } else if (currentX > (scrollView.contentSize.width - _zChartsStyle.padding * 2)) {
+        
+        currentX = scrollView.contentSize.width - _zChartsStyle.padding * 2;
+    }
+    
     for (ZChartsModel *models in _zChartsScrollView.barData) {
         if (currentX >= models.point.x && currentX <= (models.point.x + _zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing)) {
             paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
