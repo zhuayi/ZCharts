@@ -11,8 +11,7 @@
 #import "UIView+ZQuartz.h"
 #define kFrameRate 1 / 20.f
 
-@implementation ZChartsBarDrawView
-{
+@implementation ZChartsBarDrawView {
     CGContextRef _context;
     
     NSTimer *_timer;

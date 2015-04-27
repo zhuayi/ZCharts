@@ -51,7 +51,10 @@
  *
  *  @param barIndex 柱子索引
  */
-- (void)scrollToItemAtBarIndex:(NSInteger)barIndex;
+- (void)scrollToItemAtBarIndex:(NSInteger)barIndex animated:(BOOL)animated;
 
-
+/**
+ *  滚动到最后一个有数据的 bar
+ */
+- (void)scrollToItemAtLastBar;
 @end

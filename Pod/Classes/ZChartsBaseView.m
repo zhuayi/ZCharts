@@ -7,7 +7,7 @@
 //
 
 #import "ZChartsBaseView.h"
-
+#import "UIView+ZQuartz.h"
 /**
  *  比较两个参数数值大小
  *
@@ -33,6 +33,9 @@ NSComparator cmptr = ^(id obj1, id obj2){
     
     // 每行的高度
     CGFloat _rowHeight;
+    
+    // 最后一个有数据的 bar
+    CGFloat _lastBar;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame zChartsStyle:(ZChartsStyle *)zChartsStyle
@@ -53,10 +56,10 @@ NSComparator cmptr = ^(id obj1, id obj2){
         _zChartsScrollView.delegate = self;
         [self addSubview:_zChartsScrollView];
         
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
-
 
 - (ZChartsStyle *)zChartsStyle {
     if (!_zChartsStyle) {
@@ -68,31 +71,43 @@ NSComparator cmptr = ^(id obj1, id obj2){
 - (void)setLegendData:(NSMutableArray *)legendData {
     _legendData = legendData;
     
-    // 获取最大值
-    CGFloat maxData = [[[[_legendData sortedArrayUsingComparator:cmptr] lastObject] objectForKey:@"value"] floatValue];
-    NSString *maxDataString = [NSString stringWithFormat:@"%0.f", maxData];
-    maxData = maxData / powf(10, [maxDataString length] - 1);
-    
-    maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
-    if (maxData < _zChartsStyle.degreeminValue) {
+    NSInteger count = 0;
+    CGFloat maxData;
+    if (_legendData != nil) {
+        
+        // 获取最大值
+        maxData = [[[[_legendData sortedArrayUsingComparator:cmptr] lastObject] objectForKey:@"value"] floatValue];
+        NSString *maxDataString = [NSString stringWithFormat:@"%0.f", maxData];
+        maxData = maxData / powf(10, [maxDataString length] - 1);
+        
+        maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
+        if (maxData < _zChartsStyle.degreeminValue) {
+            maxData = _zChartsStyle.degreeminValue;
+        }
+        
+        count = _legendData.count;
+        
+    } else  {
+        count = 0;
         maxData = _zChartsStyle.degreeminValue;
     }
     
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
     
     // 赋值对象
-    for (int i = 0; i< _legendData.count; i++) {
-        
+    for (int i = 0; i< count; i++) {
         ZChartsModel *models = [[ZChartsModel alloc] init];
         models.value = [[[_legendData objectAtIndex:i] objectForKey:@"value"] floatValue];
+        if (models.value > 0) {
+            _lastBar = i;
+        }
         models.key = [[_legendData objectAtIndex:i] objectForKey:@"key"];
         models.point = CGPointMake(i * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), models.value * self.frame.size.height / maxData);
         [array addObject:models];
     }
     _zChartsScrollView.barData = array;
-    _zChartsScrollView.contentSize = CGSizeMake(_legendData.count * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), self.frame.size.height);
+    _zChartsScrollView.contentSize = CGSizeMake(count * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), self.frame.size.height);
     _zchartsDegreeView.maxValue = maxData;
-    
 }
 
 /**
@@ -139,7 +154,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
  *
  *  @param barIndex 柱子索引
  */
-- (void)scrollToItemAtBarIndex:(NSInteger)barIndex {
+- (void)scrollToItemAtBarIndex:(NSInteger)barIndex animated:(BOOL)animated {
     
     CGFloat left = barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count);
     
@@ -147,7 +162,14 @@ NSComparator cmptr = ^(id obj1, id obj2){
         left = _zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width;
     }
     
-    [_zChartsScrollView setContentOffset:CGPointMake(left + _zChartsStyle.barWidth / 2 , 0) animated:YES];
+    [_zChartsScrollView setContentOffset:CGPointMake(left + _zChartsStyle.barWidth / 2 , 0) animated:animated];
+}
+
+/**
+ *  滚动到最后一个有数据的 bar
+ */
+- (void)scrollToItemAtLastBar {
+    [self scrollToItemAtBarIndex:_lastBar animated:NO];
 }
 
 
