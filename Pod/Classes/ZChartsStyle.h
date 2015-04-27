@@ -25,6 +25,10 @@
  */
 @property(nonatomic, strong) NSDictionary *degreeViewFontStyle;
 
+/**
+ *  刻度最小值
+ */
+@property(nonatomic, assign) CGFloat degreeminValue;
 
 /**
  *

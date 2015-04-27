@@ -74,6 +74,9 @@ NSComparator cmptr = ^(id obj1, id obj2){
     maxData = maxData / powf(10, [maxDataString length] - 1);
     
     maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
+    if (maxData < _zChartsStyle.degreeminValue) {
+        maxData = _zChartsStyle.degreeminValue;
+    }
     
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
     
@@ -120,11 +123,13 @@ NSComparator cmptr = ^(id obj1, id obj2){
             paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
             models.isSelect = YES;
             selectZChartsModel = models;
-            [_zChartsScrollView.barChartsView setNeedsDisplay];
+            
         } else {
             models.isSelect = NO;
         }
     }
+    
+    [_zChartsScrollView.barChartsView setNeedsDisplay];
     
     [_delegate scrollViewDidScroll:contentOffsetScale zChartsModel:selectZChartsModel];
 }
@@ -137,6 +142,11 @@ NSComparator cmptr = ^(id obj1, id obj2){
 - (void)scrollToItemAtBarIndex:(NSInteger)barIndex {
     
     CGFloat left = barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count);
+    
+    if (left > (_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width)) {
+        left = _zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width;
+    }
+    
     [_zChartsScrollView setContentOffset:CGPointMake(left + _zChartsStyle.barWidth / 2 , 0) animated:YES];
 }
 

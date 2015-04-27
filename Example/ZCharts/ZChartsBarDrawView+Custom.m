@@ -8,12 +8,16 @@
 
 #import "ZChartsBarDrawView+Custom.h"
 #import "ZChartsKit.h"
+#import "UIView+ZQuartz.h"
 @implementation ZChartsBarDrawView (Custom)
 
 
 - (void)drawCustom:(ZChartsModel *)zChartsModel {
     
-//    NSLog(@"zChartsModel : %f", zChartsModel.value);
+    [[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.05] setFill];
+    CGRect frame2 = CGRectMake(zChartsModel.point.x, 0, self.zChartsStyle.barWidth, self.frame.size.height);
+    [self drawRectangle:frame2 lineWidth:0.0 color:[UIColor whiteColor]];
+        
     [[UIColor blackColor] setFill];
 }
 @end

@@ -9,7 +9,7 @@
 #import "ZChartsBarDrawView.h"
 #import "ZChartsModel.h"
 #import "UIView+ZQuartz.h"
-#define kFrameRate 1/60.f
+#define kFrameRate 1 / 20.f
 
 @implementation ZChartsBarDrawView
 {
@@ -77,10 +77,6 @@
     
     for (ZChartsModel *modes in _barData) {
         
-        [[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.05] setFill];
-        CGRect frame2 = CGRectMake(modes.point.x, 0, _zChartsStyle.barWidth, self.frame.size.height);
-        [self drawRectangle:frame2 lineWidth:0.0 color:[UIColor whiteColor]];
-        
         CGFloat y = [self getPostion:_currentTime fromValue:0 toValue:modes.point.y duration:_zChartsStyle.duration];
         if (y < modes.point.y) {
             isStopAnimation = YES;
@@ -118,7 +114,9 @@
  */
 - (CGFloat)getPostion:(CGFloat)currentTime fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(CGFloat)duration
 {
-    currentTime = currentTime*kFrameRate;
+    currentTime = currentTime * (kFrameRate);
+    toValue = toValue - fromValue;
+    duration = duration / (kFrameRate);
     return  (currentTime >= duration) ? fromValue + toValue : toValue * (-pow(2, -10 * currentTime / duration) + 1) + fromValue;
 }
 
