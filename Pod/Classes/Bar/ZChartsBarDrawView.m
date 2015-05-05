@@ -9,7 +9,8 @@
 #import "ZChartsBarDrawView.h"
 #import "ZChartsModel.h"
 #import "UIView+ZQuartz.h"
-#define kFrameRate 1 / 20.f
+#import "ZEasing.h"
+#define kFrameRate 1 / 60.f
 
 @implementation ZChartsBarDrawView {
     CGContextRef _context;
@@ -76,7 +77,8 @@
     
     for (ZChartsModel *modes in _barData) {
         
-        CGFloat y = [self getPostion:_currentTime fromValue:0 toValue:modes.point.y duration:_zChartsStyle.duration];
+        CGFloat y = [ZEasing tween:_currentTime fromValue:0 toValue:modes.point.y duration:(_zChartsStyle.duration / (kFrameRate)) tweenType:TweenTypeQuartic easeType:EaseTypeEaseOut];
+        
         if (y < modes.point.y) {
             isStopAnimation = YES;
         }
@@ -99,24 +101,6 @@
     if (isStopAnimation == NO) {
         [self stopAnimation];
     }
-}
-
-/**
- *  计算下一帧坐标
- *
- *  @param currentTime 当前时间
- *  @param fromValue   起始位置
- *  @param toValue     目标位置
- *  @param duration    动画时间
- *
- *  @return CGFloat 坐标
- */
-- (CGFloat)getPostion:(CGFloat)currentTime fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(CGFloat)duration
-{
-    currentTime = currentTime * (kFrameRate);
-    toValue = toValue - fromValue;
-    duration = duration / (kFrameRate);
-    return  (currentTime >= duration) ? fromValue + toValue : toValue * (-pow(2, -10 * currentTime / duration) + 1) + fromValue;
 }
 
 @end

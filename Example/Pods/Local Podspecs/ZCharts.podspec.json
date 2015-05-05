@@ -1,6 +1,6 @@
 {
   "name": "ZCharts",
-  "version": "0.3.0",
+  "version": "0.7.0",
   "summary": "基于drawRect的 一款柱状图.",
   "description": "                       基于drawRect的 一款柱状图\n",
   "homepage": "https://github.com/zhuayi/ZCharts.git",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/zhuayi/ZCharts.git",
-    "tag": "0.3.0"
+    "tag": "0.7.0"
   },
   "platforms": {
     "ios": "7.0"

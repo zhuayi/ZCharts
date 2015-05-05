@@ -20,7 +20,7 @@
     zChartsStyle.rowCount = 5;
     zChartsStyle.barWidth = 10;
     zChartsStyle.padding = 50;
-    zChartsStyle.duration = 0.2;
+    zChartsStyle.duration = 0.6;
     zChartsStyle.degreeminValue = 500;
     zChartsStyle.degreeViewFontStyle = @{
                                          NSFontAttributeName: [UIFont systemFontOfSize:12.0],

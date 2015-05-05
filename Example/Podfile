@@ -5,6 +5,9 @@ target 'ZCharts', :exclusive => true do
   
   ## 绘制库
   pod 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
+  
+  pod 'ZEasing', :path => '/Users/zhuayi/work/app/ZEasing'
+  
 end
 
 target 'Tests', :exclusive => true do
