@@ -94,6 +94,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
     
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
     
+    _lastBar = 0;
     // 赋值对象
     for (int i = 0; i< count; i++) {
         ZChartsModel *models = [[ZChartsModel alloc] init];
