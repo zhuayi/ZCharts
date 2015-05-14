@@ -81,7 +81,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
         maxData = maxData / powf(10, [maxDataString length] - 1);
         
         maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
-        if (maxData < _zChartsStyle.degreeminValue) {
+        if (maxData > _zChartsStyle.degreeminValue) {
             maxData = _zChartsStyle.degreeminValue;
         }
         
