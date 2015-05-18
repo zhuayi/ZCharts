@@ -157,13 +157,19 @@ NSComparator cmptr = ^(id obj1, id obj2){
  */
 - (void)scrollToItemAtBarIndex:(NSInteger)barIndex animated:(BOOL)animated {
     
+    
     CGFloat left = barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count);
     
     if (left > (_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width)) {
         left = _zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width;
     }
     
-    [_zChartsScrollView setContentOffset:CGPointMake(left + _zChartsStyle.barWidth / 2 , 0) animated:animated];
+    CGPoint contentOffset = CGPointMake(left + _zChartsStyle.barWidth / 2 , 0);
+    if (floorf(contentOffset.x) == floorf(_zChartsScrollView.contentOffset.x)
+        && floorf(contentOffset.y) == floorf(_zChartsScrollView.contentOffset.y)) {
+        [_zChartsScrollView setContentOffset:CGPointMake(contentOffset.x - 1 ,contentOffset.y - 1) animated:NO];
+    }
+    [_zChartsScrollView setContentOffset:contentOffset animated:animated];
 }
 
 /**
@@ -184,5 +190,6 @@ NSComparator cmptr = ^(id obj1, id obj2){
     
     [self setPaopaoViewX:scrollView];
 }
+
 
 @end
