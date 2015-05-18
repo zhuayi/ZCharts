@@ -20,7 +20,9 @@
  */
 - (void)drawRect:(CGRect)rect {
     _context = UIGraphicsGetCurrentContext();
-    
+    if (_maxValue == 0) {
+        _maxValue = _zChartsStyle.degreemaxValue;
+    }
     for (int i = 0; i < _zChartsStyle.rowCount; i++) {
         
         int value = _maxValue/(_zChartsStyle.rowCount - 1) * i;

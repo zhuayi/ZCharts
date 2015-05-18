@@ -21,7 +21,7 @@
     zChartsStyle.barWidth = 10;
     zChartsStyle.padding = 50;
     zChartsStyle.duration = 0.6;
-    zChartsStyle.degreeminValue = 500;
+    zChartsStyle.degreemaxValue = 500;
     zChartsStyle.degreeViewFontStyle = @{
                                          NSFontAttributeName: [UIFont systemFontOfSize:12.0],
                                          NSForegroundColorAttributeName: [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2]
@@ -40,7 +40,7 @@
         [data addObject:dict];
     }
 
-    zChartsView.legendData = data;
+//    zChartsView.legendData = data;
     
     
     [self.view addSubview:zChartsView];

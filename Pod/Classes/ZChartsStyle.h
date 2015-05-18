@@ -28,7 +28,7 @@
 /**
  *  刻度最小值
  */
-@property(nonatomic, assign) CGFloat degreeminValue;
+@property(nonatomic, assign) CGFloat degreemaxValue;
 
 /**
  *
