@@ -95,18 +95,22 @@ NSComparator cmptr = ^(id obj1, id obj2){
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
     
     _lastBar = 0;
-    // 赋值对象
-    for (int i = 0; i< count; i++) {
-        ZChartsModel *models = [[ZChartsModel alloc] init];
-        models.value = [[[_legendData objectAtIndex:i] objectForKey:@"value"] floatValue];
-        if (models.value > 0) {
-            _lastBar = i;
+    
+    @autoreleasepool {
+        
+        // 赋值对象
+        for (int i = 0; i< count; i++) {
+            ZChartsModel *models = [[ZChartsModel alloc] init];
+            models.value = [[[_legendData objectAtIndex:i] objectForKey:@"value"] floatValue];
+            if (models.value > 0) {
+                _lastBar = i;
+            }
+            models.key = [[_legendData objectAtIndex:i] objectForKey:@"key"];
+            models.point = CGPointMake(i * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), models.value * self.frame.size.height / maxData);
+            [array addObject:models];
         }
-        models.key = [[_legendData objectAtIndex:i] objectForKey:@"key"];
-        models.point = CGPointMake(i * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), models.value * self.frame.size.height / maxData);
-        [array addObject:models];
+        _zChartsScrollView.barData = array;
     }
-    _zChartsScrollView.barData = array;
     _zChartsScrollView.contentSize = CGSizeMake(count * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), self.frame.size.height);
     _zchartsDegreeView.maxValue = maxData;
 }
@@ -134,14 +138,17 @@ NSComparator cmptr = ^(id obj1, id obj2){
         currentX = scrollView.contentSize.width - _zChartsStyle.padding * 2;
     }
     
-    for (ZChartsModel *models in _zChartsScrollView.barData) {
-        if (currentX >= models.point.x && currentX <= (models.point.x + _zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing)) {
-            paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
-            models.isSelect = YES;
-            selectZChartsModel = models;
-            
-        } else {
-            models.isSelect = NO;
+    @autoreleasepool {
+        
+        for (ZChartsModel *models in _zChartsScrollView.barData) {
+            if (currentX >= models.point.x && currentX <= (models.point.x + _zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing)) {
+                paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
+                models.isSelect = YES;
+                selectZChartsModel = models;
+                
+            } else {
+                models.isSelect = NO;
+            }
         }
     }
     

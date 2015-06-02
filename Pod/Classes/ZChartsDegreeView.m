@@ -38,7 +38,11 @@
             height = 0;
         }
         
-        [self drawText:CGPointMake(self.frame.size.width - size.width, height) text:text fontSize:_zChartsStyle.degreeViewFontStyle];
+        @autoreleasepool {
+            
+            [self drawText:CGPointMake(self.frame.size.width - size.width, height) text:text fontSize:_zChartsStyle.degreeViewFontStyle];
+            
+        }
     }
 }
 
