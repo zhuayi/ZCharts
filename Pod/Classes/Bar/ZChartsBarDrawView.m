@@ -90,14 +90,12 @@
             lineWidth = 1.5;
         }
         
-        @autoreleasepool {
+        if ([self respondsToSelector:@selector(drawCustom:)]) {
             
-            if ([self respondsToSelector:@selector(drawCustom:)]) {
-                
-                [self performSelector:@selector(drawCustom:) withObject:modes];
-            }
-            [self drawRectangle:frame lineWidth:lineWidth color:[UIColor whiteColor]];
+            [self performSelector:@selector(drawCustom:) withObject:modes];
         }
+        
+        [self drawRectangle:frame lineWidth:lineWidth color:[UIColor whiteColor]];
     }
     _currentTime++;
     if (isStopAnimation == NO) {

@@ -138,17 +138,14 @@ NSComparator cmptr = ^(id obj1, id obj2){
         currentX = scrollView.contentSize.width - _zChartsStyle.padding * 2;
     }
     
-    @autoreleasepool {
-        
-        for (ZChartsModel *models in _zChartsScrollView.barData) {
-            if (currentX >= models.point.x && currentX <= (models.point.x + _zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing)) {
-                paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
-                models.isSelect = YES;
-                selectZChartsModel = models;
-                
-            } else {
-                models.isSelect = NO;
-            }
+    for (ZChartsModel *models in _zChartsScrollView.barData) {
+        if (currentX >= models.point.x && currentX <= (models.point.x + _zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing)) {
+            paopaoLabel.text = [NSString stringWithFormat:@"%0.f",models.value];
+            models.isSelect = YES;
+            selectZChartsModel = models;
+            
+        } else {
+            models.isSelect = NO;
         }
     }
     

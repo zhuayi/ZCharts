@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZCharts"
-  s.version          = "1.1.2"
+  s.version          = "1.1.3"
   s.summary          = "基于drawRect的 一款柱状图."
   s.description      = <<-DESC
                        基于drawRect的 一款柱状图
