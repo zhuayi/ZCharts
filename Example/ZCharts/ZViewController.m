@@ -36,7 +36,7 @@
     for (int i = 0 ; i< 24 * 7; i++) {
         
         NSString *value = [NSString stringWithFormat:@"%d", [self getRandomNumber:100 to:500]];
-        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%ld", (long)i], @"value":value};
+        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%d", i], @"value":value};
         [data addObject:dict];
     }
 
@@ -67,7 +67,7 @@
     for (int i = 0 ; i< 24 * 7; i++) {
         
         NSString *value = [NSString stringWithFormat:@"%d", [self getRandomNumber:500 to:1000]];
-        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%ld", (long)i], @"value":value};
+        NSDictionary *dict = @{ @"key":[NSString stringWithFormat:@"%d", i], @"value":value};
         [data addObject:dict];
     }
 

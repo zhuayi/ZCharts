@@ -157,8 +157,10 @@ NSComparator cmptr = ^(id obj1, id obj2){
  */
 - (void)scrollToItemAtBarIndex:(NSInteger)barIndex animated:(BOOL)animated {
     
-    
-    CGFloat left = barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count);
+    CGFloat left = 0;
+    if (_legendData != nil) {
+        left = (barIndex * ((_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width) / _legendData.count));
+    }
     
     if (left > (_zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width)) {
         left = _zChartsScrollView.contentSize.width - _zChartsScrollView.frame.size.width;
