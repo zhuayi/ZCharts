@@ -92,7 +92,9 @@
         
         if ([self respondsToSelector:@selector(drawCustom:)]) {
             
-            [self performSelector:@selector(drawCustom:) withObject:modes];
+            @autoreleasepool {
+                [self performSelector:@selector(drawCustom:) withObject:modes];
+            }
         }
         
         [self drawRectangle:frame lineWidth:lineWidth color:[UIColor whiteColor]];
@@ -101,6 +103,11 @@
     if (isStopAnimation == NO) {
         [self stopAnimation];
     }
+
+}
+
+- (void)dealloc {
+    NSLog(@"%s", __func__);
 }
 
 @end

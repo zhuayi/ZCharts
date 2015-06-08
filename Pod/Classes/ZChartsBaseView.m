@@ -80,7 +80,7 @@ NSComparator cmptr = ^(id obj1, id obj2){
         NSString *maxDataString = [NSString stringWithFormat:@"%0.f", maxData];
         maxData = maxData / powf(10, [maxDataString length] - 1);
         
-        maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
+//        maxData = ((int)maxData + 1) * pow(10, [maxDataString length] - 1);
         //        if (maxData > _zChartsStyle.degreeminValue) {
         maxData = _zChartsStyle.degreemaxValue;
         //        }
@@ -95,11 +95,10 @@ NSComparator cmptr = ^(id obj1, id obj2){
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
     
     _lastBar = 0;
-    
-    @autoreleasepool {
-        
-        // 赋值对象
-        for (int i = 0; i< count; i++) {
+    // 赋值对象
+    for (int i = 0; i< count; i++) {
+        @autoreleasepool {
+            
             ZChartsModel *models = [[ZChartsModel alloc] init];
             models.value = [[[_legendData objectAtIndex:i] objectForKey:@"value"] floatValue];
             if (models.value > 0) {
@@ -109,8 +108,8 @@ NSComparator cmptr = ^(id obj1, id obj2){
             models.point = CGPointMake(i * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), models.value * self.frame.size.height / maxData);
             [array addObject:models];
         }
-        _zChartsScrollView.barData = array;
     }
+    _zChartsScrollView.barData = array;
     _zChartsScrollView.contentSize = CGSizeMake(count * (_zChartsStyle.barWidth + _zChartsStyle.minimumRowSpacing), self.frame.size.height);
     _zchartsDegreeView.maxValue = maxData;
 }
