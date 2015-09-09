@@ -6,7 +6,11 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Example
+
+### 曲线图
+
+![enter image description here](https://raw.githubusercontent.com/zhuayi/ZCharts/master/line.png)
 
 ## Installation
 
