@@ -7,954 +7,264 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BBA508B15ABA58EBD46A85 /* ZEasing+Quintic.m in Sources */ = {isa = PBXBuildFile; fileRef = B851FD905BF4FE689896866E /* ZEasing+Quintic.m */; };
-		02EF149898B55965E69BA322 /* ZChartsBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A410037F544CEF921271D /* ZChartsBaseView.m */; };
-		04BBFC9BBDAB5BDA0EE8553F /* ZChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D97CFA2D0BDC654E11012AA8 /* ZChartsModel.m */; };
-		04D608CE2D86E19505ED9948 /* Pods-ZCharts-ZEasing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BACB9496C4A70E4A152DE585 /* Pods-ZCharts-ZEasing-dummy.m */; };
-		0EA44A05D2A678B13D5D2196 /* ZChartsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 659CD24A8E16B8A5CE56F41E /* ZChartsModel.h */; };
-		129CF15A3DD9C6B51E1C6A33 /* ZChartsBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B08B06227B98E4640B1E8B /* ZChartsBaseView.h */; };
-		1531941D2ED94987E3EC73D6 /* ZEasing+Linear.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E30DA8414014FA0447968 /* ZEasing+Linear.m */; };
-		174B06FF88F1D5BDB33D5947 /* ZChartsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB630F82F2910220A07CABE /* ZChartsScrollView.h */; };
-		18CA3D7E22154F3A4AD4F399 /* ZChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F9ECC5F335A4E6055E173 /* ZChartsScrollView.m */; };
-		1C6AC70D742A667F7C18A15E /* ZChartsDegreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A700138487FC5441AB0ECA0 /* ZChartsDegreeView.m */; };
-		26060DBE17BEB5CBB9989383 /* Pods-ZCharts-ZCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 997F31F0FAF427E490EED7F9 /* Pods-ZCharts-ZCharts-dummy.m */; };
-		272DF2E31E2A180614E810C5 /* ZChartsBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A410037F544CEF921271D /* ZChartsBaseView.m */; };
-		2A1A7331268BAC2C6771F426 /* ZChartsBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B08B06227B98E4640B1E8B /* ZChartsBaseView.h */; };
-		3A3E18721AF5384CC700AB01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		4AE5447BAA05C6043385E6AF /* ZEasing+Cubic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216508B25B986B5BFD90940 /* ZEasing+Cubic.m */; };
-		4BF7DE2B4205857A0DBCB06D /* ZChartsDegreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A24F03AD2337CD3C8E55E974 /* ZChartsDegreeView.h */; };
-		571195E021784ED544701A92 /* ZEasing+Quadratic.h in Headers */ = {isa = PBXBuildFile; fileRef = B583DFC626FC7560FF932C86 /* ZEasing+Quadratic.h */; };
-		63C265762FB19A62662FAF2A /* Pods-ZCharts-UIView-ZQuartz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A6BB75C077BFE06AD9BB1 /* Pods-ZCharts-UIView-ZQuartz-dummy.m */; };
-		67B439C263294E4DF2E0225A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		699E6C79079818377EB701DD /* ZEasing+Quart.h in Headers */ = {isa = PBXBuildFile; fileRef = F9454A60F17440BADA3DC03A /* ZEasing+Quart.h */; };
-		731E3AB12508E9868BE694DA /* ZChartsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F9ECC5F335A4E6055E173 /* ZChartsScrollView.m */; };
-		7B0A49AACD3E45FE721DBF53 /* Pods-ZCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 510237BE8B2DFE57CFA1D1C3 /* Pods-ZCharts-dummy.m */; };
-		7D68B8261323D7642679B24F /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B28FF50C1115A3A1CEF1080 /* Pods-Tests-dummy.m */; };
-		81011B196C34045CFF67FCEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		810BF7A35FCB9B990D295D66 /* ZChartsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 659CD24A8E16B8A5CE56F41E /* ZChartsModel.h */; };
-		81B4003A597A0BFF3DD36BFE /* ZChartsBarDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52990997756715368A99F78D /* ZChartsBarDrawView.h */; };
-		877541467E22DEE113AA3186 /* ZChartsDegreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A700138487FC5441AB0ECA0 /* ZChartsDegreeView.m */; };
-		87A3761D97DD08E048E83AE6 /* Pods-Tests-ZCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB21D5261CB31B10825609 /* Pods-Tests-ZCharts-dummy.m */; };
-		8AB7938EFA7F625FE4672D1B /* ZEasing+Quart.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F6C4D50C0E317F994AB7CE /* ZEasing+Quart.m */; };
-		8E52F1788D4A58D997C2E1D2 /* ZChartsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB630F82F2910220A07CABE /* ZChartsScrollView.h */; };
-		8EF59409B0A85B4F13EA7B4C /* ZEasing+Quadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 268E8B51A6124BA2B9B96324 /* ZEasing+Quadratic.m */; };
-		99B08F1516BA02789003B9DA /* ZChartsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7889E68313871B0CA1D62D /* ZChartsKit.h */; };
-		ADD9E75ADAB5AB0DD54B12CF /* ZChartsBarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5386C97B8E92A3F5E985BB /* ZChartsBarDrawView.m */; };
-		B2DCC11361C6033ABA918CCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		B38A34DB8CE7E30BDFD0DF53 /* ZChartsBarDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52990997756715368A99F78D /* ZChartsBarDrawView.h */; };
-		BF33F99EFBB4479FEBA33050 /* ZEasing+Quintic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0F1741B2464481CB209371 /* ZEasing+Quintic.h */; };
-		C1D6F4EE85FF256D082163B8 /* ZChartsDegreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A24F03AD2337CD3C8E55E974 /* ZChartsDegreeView.h */; };
-		C45E30F84B9B1C1577D90C82 /* UIView+ZQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDF89F378F6FB3011BD07 /* UIView+ZQuartz.m */; };
-		CAFD64BBB06F2112F2D76CFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		D028B6153E5BC783636AD56C /* ZChartsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F4D541969E2D23782B23A7 /* ZChartsStyle.m */; };
-		D348F327A47CCD7D8C051EFE /* ZEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4153206A73C16B04BD91AF4C /* ZEasing.m */; };
-		D598016B4016DD9B52F5CAF4 /* ZEasing+Linear.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E76BC2A44ED1157E84A21F4 /* ZEasing+Linear.h */; };
-		DB27CF97CDC763BB2B19CB2B /* ZChartsStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 74884A2EB2355315CFB9C4E8 /* ZChartsStyle.h */; };
-		DCC7F9BC50977E06A8CD4626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABB084D174A66E94640330 /* Foundation.framework */; };
-		E531A21EBACC0CC6245765FF /* ZChartsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F4D541969E2D23782B23A7 /* ZChartsStyle.m */; };
-		E7AC488C236F2E640C073F11 /* UIView+ZQuartz.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA5E029A6B1126BEF673293 /* UIView+ZQuartz.h */; };
-		E815EBDE9F326E20FA724465 /* ZChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D97CFA2D0BDC654E11012AA8 /* ZChartsModel.m */; };
-		E90EF7C570DF16B5B39CECC8 /* ZChartsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7889E68313871B0CA1D62D /* ZChartsKit.h */; };
-		E9CBCB7CB33E461AF53F6255 /* ZChartsBarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5386C97B8E92A3F5E985BB /* ZChartsBarDrawView.m */; };
-		EB4DCED5A3E952010DE793FC /* ZEasing+Cubic.h in Headers */ = {isa = PBXBuildFile; fileRef = C47E5288B999E700B2750646 /* ZEasing+Cubic.h */; };
-		EBA7F8934D8A2D20C392DEB8 /* ZChartsStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 74884A2EB2355315CFB9C4E8 /* ZChartsStyle.h */; };
-		F2EE4BAB0D88737542B89FF6 /* ZEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = 704C6131A50E34FB220E4FEF /* ZEasing.h */; };
+		3DDBA76C9626042809CC65FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3665A209DD80C95FBC4739C1 /* Foundation.framework */; };
+		52674F39BEE0D185DC01DDC0 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F8F6AC0B65DBBBD0EAE5B3 /* Pods-dummy.m */; };
+		7874DC35C7B1618BA9FACAD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD48E9D269687722A7E1B90C /* CoreGraphics.framework */; };
+		ACC8C52584904EDAA9E00A72 /* Pods-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B57036972321B39AEE74E2A /* Pods-MBProgressHUD-dummy.m */; };
+		D4F96E3C7AFB9A2DD9B4F7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3665A209DD80C95FBC4739C1 /* Foundation.framework */; };
+		DA8436D72FCF490351212D09 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A382E404FFFC850C5115979 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FFA402DC7C2D3718F179BD51 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0C18F3AC9979B872A123B3 /* MBProgressHUD.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18A622934897AEEE9E697DE2 /* PBXContainerItemProxy */ = {
+		F6DCD98501B553EA0493A64C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
+			containerPortal = 5AA41187FA00EA3276ADB912 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26E602C4B6E1F900B102B375;
-			remoteInfo = "Pods-ZCharts-ZCharts-ZCharts";
-		};
-		1E4C1D1E65B47028EE9A3D42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53E7563EED76B7893DF48ACA;
-			remoteInfo = "Pods-ZCharts-ZEasing";
-		};
-		26D24ABE39BEA52AAF08E1B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1121DEB53D614A19D5479BFC;
-			remoteInfo = "Pods-Tests-ZCharts";
-		};
-		2A0F9C02DBEDED06A87B583F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B03072C91193D3AA8413883;
-			remoteInfo = "Pods-ZCharts-ZCharts";
-		};
-		4171F2DD79D02C9A00E2AF58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70E978EC21A3EFACB6E8C82E;
-			remoteInfo = "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz";
-		};
-		891C0A5CBF67B8DE1A35526F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69520A9CB5331C86ABBF729C;
-			remoteInfo = "Pods-ZCharts-ZEasing-ZEasing";
-		};
-		CB43B543A1DD6830065AC27C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E5DD45CDBB8B24773042D4B;
-			remoteInfo = "Pods-ZCharts-UIView-ZQuartz";
-		};
-		E784263DF4A719E027FF7210 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 123A9003BE77F69E189E8ECD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A94237DE080E09FA577655BF;
-			remoteInfo = "Pods-Tests-ZCharts-ZCharts";
+			remoteGlobalIDString = 586E22AAF04D29FD84235550;
+			remoteInfo = "Pods-MBProgressHUD";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037F9ECC5F335A4E6055E173 /* ZChartsScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsScrollView.m; sourceTree = "<group>"; };
-		07C8ED56CD904AEB48BDF3D3 /* Pods-ZCharts-UIView-ZQuartz.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts-UIView-ZQuartz.xcconfig"; sourceTree = "<group>"; };
-		0A0A3A388F17F9ACF1DD1530 /* Pods-ZCharts-ZEasing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZCharts-ZEasing-prefix.pch"; sourceTree = "<group>"; };
-		0B28FF50C1115A3A1CEF1080 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		0CABB084D174A66E94640330 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0DEF2B521A20A5A7BC49C3C6 /* Pods-ZCharts-UIView-ZQuartz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZCharts-UIView-ZQuartz-prefix.pch"; sourceTree = "<group>"; };
-		0E5FD0DA4E0F2554F47A8B35 /* ZCharts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCharts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		18C7D9B1B045615C59214A61 /* Pods-ZCharts-ZCharts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCharts-ZCharts-Private.xcconfig"; path = "../Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts-Private.xcconfig"; sourceTree = "<group>"; };
-		1A700138487FC5441AB0ECA0 /* ZChartsDegreeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsDegreeView.m; sourceTree = "<group>"; };
-		268E8B51A6124BA2B9B96324 /* ZEasing+Quadratic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZEasing+Quadratic.m"; sourceTree = "<group>"; };
-		288080035D5000546AC4F213 /* UIView-ZQuartz.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIView-ZQuartz.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CCB21D5261CB31B10825609 /* Pods-Tests-ZCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-ZCharts-dummy.m"; sourceTree = "<group>"; };
-		33579DAE7D0A20B90FE9A83F /* Pods-ZCharts-ZEasing-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts-ZEasing-Private.xcconfig"; sourceTree = "<group>"; };
-		37B08B06227B98E4640B1E8B /* ZChartsBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsBaseView.h; sourceTree = "<group>"; };
-		3C5386C97B8E92A3F5E985BB /* ZChartsBarDrawView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsBarDrawView.m; sourceTree = "<group>"; };
-		4153206A73C16B04BD91AF4C /* ZEasing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZEasing.m; sourceTree = "<group>"; };
-		43D4DBB6E9FF82B4921B263F /* ZCharts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCharts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		44854F8517ED39A2D5D5EC6A /* Pods-Tests-ZCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-ZCharts-prefix.pch"; sourceTree = "<group>"; };
-		4C43058C3991D126021E93C3 /* Pods-ZCharts-UIView-ZQuartz-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts-UIView-ZQuartz-Private.xcconfig"; sourceTree = "<group>"; };
-		510237BE8B2DFE57CFA1D1C3 /* Pods-ZCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZCharts-dummy.m"; sourceTree = "<group>"; };
-		5216508B25B986B5BFD90940 /* ZEasing+Cubic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZEasing+Cubic.m"; sourceTree = "<group>"; };
-		52990997756715368A99F78D /* ZChartsBarDrawView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsBarDrawView.h; sourceTree = "<group>"; };
-		5E76BC2A44ED1157E84A21F4 /* ZEasing+Linear.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZEasing+Linear.h"; sourceTree = "<group>"; };
-		5ECEDF89F378F6FB3011BD07 /* UIView+ZQuartz.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZQuartz.m"; path = "Pod/Classes/UIView+ZQuartz.m"; sourceTree = "<group>"; };
-		5F959F46AC1C1B4153424E11 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		633A410037F544CEF921271D /* ZChartsBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsBaseView.m; sourceTree = "<group>"; };
-		659CD24A8E16B8A5CE56F41E /* ZChartsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsModel.h; sourceTree = "<group>"; };
-		66B0323EB1BB8282FCD787A3 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		704C6131A50E34FB220E4FEF /* ZEasing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZEasing.h; sourceTree = "<group>"; };
-		73441B4BB89BDDF21B2C5788 /* libPods-ZCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74884A2EB2355315CFB9C4E8 /* ZChartsStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsStyle.h; sourceTree = "<group>"; };
-		75625B6BA8396A985E6B1B5C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C03CDB60FB7A6FCDA4CC0B9 /* Pods-ZCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts.debug.xcconfig"; sourceTree = "<group>"; };
-		7EB1CCB43948DAD0971D4307 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7EF2E3FDBB4E8399B051529C /* Pods-Tests-ZCharts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-ZCharts-Private.xcconfig"; sourceTree = "<group>"; };
-		805548953ABE823EDF4B6C37 /* Pods-Tests-ZCharts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-ZCharts.xcconfig"; sourceTree = "<group>"; };
-		81F4D541969E2D23782B23A7 /* ZChartsStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsStyle.m; sourceTree = "<group>"; };
-		85288B31E0895D2747FC8852 /* libPods-ZCharts-UIView-ZQuartz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts-UIView-ZQuartz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87663B3326DC789F208C0432 /* Pods-ZCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts.release.xcconfig"; sourceTree = "<group>"; };
-		8C0F1741B2464481CB209371 /* ZEasing+Quintic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZEasing+Quintic.h"; sourceTree = "<group>"; };
-		8C6A6BB75C077BFE06AD9BB1 /* Pods-ZCharts-UIView-ZQuartz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZCharts-UIView-ZQuartz-dummy.m"; sourceTree = "<group>"; };
-		8E7889E68313871B0CA1D62D /* ZChartsKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsKit.h; sourceTree = "<group>"; };
-		95F6C4D50C0E317F994AB7CE /* ZEasing+Quart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZEasing+Quart.m"; sourceTree = "<group>"; };
-		997F31F0FAF427E490EED7F9 /* Pods-ZCharts-ZCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ZCharts-ZCharts-dummy.m"; path = "../Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts-dummy.m"; sourceTree = "<group>"; };
-		A24F03AD2337CD3C8E55E974 /* ZChartsDegreeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsDegreeView.h; sourceTree = "<group>"; };
-		A3C6870E5107C47E79784E8C /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		A59E30DA8414014FA0447968 /* ZEasing+Linear.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZEasing+Linear.m"; sourceTree = "<group>"; };
-		A881D58F25577E5021908D33 /* Pods-ZCharts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZCharts-acknowledgements.plist"; sourceTree = "<group>"; };
-		B583DFC626FC7560FF932C86 /* ZEasing+Quadratic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZEasing+Quadratic.h"; sourceTree = "<group>"; };
-		B75B981D75A14793C8268205 /* libPods-Tests-ZCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-ZCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7A2607CAD1E8FAE47B2678B /* ZEasing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEasing.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		B851FD905BF4FE689896866E /* ZEasing+Quintic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZEasing+Quintic.m"; sourceTree = "<group>"; };
-		B887C78A0E8D60920F7E92DA /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		BACB9496C4A70E4A152DE585 /* Pods-ZCharts-ZEasing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZCharts-ZEasing-dummy.m"; sourceTree = "<group>"; };
-		C15AFB03B265489DDC9082E9 /* Pods-ZCharts-ZCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ZCharts-ZCharts-prefix.pch"; path = "../Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts-prefix.pch"; sourceTree = "<group>"; };
-		C47E5288B999E700B2750646 /* ZEasing+Cubic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZEasing+Cubic.h"; sourceTree = "<group>"; };
-		C63FE0F6782DD183D09E025B /* libPods-ZCharts-ZCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts-ZCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8DAEF9AF9744FE7B389A3A3 /* Pods-ZCharts-ZEasing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCharts-ZEasing.xcconfig"; sourceTree = "<group>"; };
-		CB9EADEC886F285BDD729F57 /* Pods-ZCharts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZCharts-resources.sh"; sourceTree = "<group>"; };
-		CC1725D7649543D9BA8BA81A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CDB630F82F2910220A07CABE /* ZChartsScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZChartsScrollView.h; sourceTree = "<group>"; };
-		D97CFA2D0BDC654E11012AA8 /* ZChartsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZChartsModel.m; sourceTree = "<group>"; };
-		DE9B41C78F72C875614F4048 /* Pods-ZCharts-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZCharts-environment.h"; sourceTree = "<group>"; };
-		F027EB1D7D75BB54966567EB /* Pods-ZCharts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZCharts-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7CB231C1417A8E0502A1E23 /* Pods-ZCharts-ZCharts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCharts-ZCharts.xcconfig"; path = "../Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts.xcconfig"; sourceTree = "<group>"; };
-		F9454A60F17440BADA3DC03A /* ZEasing+Quart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZEasing+Quart.h"; sourceTree = "<group>"; };
-		FA81FF4130595515B56129A4 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FAA5E029A6B1126BEF673293 /* UIView+ZQuartz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZQuartz.h"; path = "Pod/Classes/UIView+ZQuartz.h"; sourceTree = "<group>"; };
-		FE359FF2936206597EE81510 /* libPods-ZCharts-ZEasing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCharts-ZEasing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA4A4B6BE5BE412E9D57487 /* Pods-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		17F8F6AC0B65DBBBD0EAE5B3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		24978DCA304F8ECDDE0A6D8A /* Pods-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		326326B58CA429896A1584C9 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		3665A209DD80C95FBC4739C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D0C18F3AC9979B872A123B3 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		40067F38C6475DE15890F963 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		520EFA3F100F64162366A030 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		7A382E404FFFC850C5115979 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7B57036972321B39AEE74E2A /* Pods-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		8B4DD9F3ACE36C0D49201E6E /* Pods-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		A11738BDB9847D44D3279004 /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED049CD46B083917D059A9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEE0599BD0BE19EEA246AF9D /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B20063EF457E4BB3D4FDEE2C /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		BD48E9D269687722A7E1B90C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D7A5297A43869B4F65C36D1D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DF078493150519A28146CF9D /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06D125DFC5468F90F28B4AB4 /* Frameworks */ = {
+		1C9BFE8D1E3354DC232860A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67B439C263294E4DF2E0225A /* Foundation.framework in Frameworks */,
+				7874DC35C7B1618BA9FACAD4 /* CoreGraphics.framework in Frameworks */,
+				D4F96E3C7AFB9A2DD9B4F7C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35FC685073EB1C0494E25C7C /* Frameworks */ = {
+		82A4E97F1D4E953C73002C39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2DCC11361C6033ABA918CCA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47D19CAD475E5E78D9B54D86 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		541471FFC7AC66B16371C2CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A3E18721AF5384CC700AB01 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EB1042262C07F82B26A5CB2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631B8ED44B99652B434E0F77 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6998FCB5210B2AA43937CBA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81011B196C34045CFF67FCEE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4B63D73BBBFABAAF996DC80 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCC7F9BC50977E06A8CD4626 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA9A0D3F82B3AB9B4F56FB98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAFD64BBB06F2112F2D76CFB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9A167548FFCA67E0CF426E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3DDBA76C9626042809CC65FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05E2C15DFF5E08F4798D038F /* iOS */ = {
+		008DE474A8E566BE4DAD7703 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				0CABB084D174A66E94640330 /* Foundation.framework */,
+				3D0C18F3AC9979B872A123B3 /* MBProgressHUD.h */,
+				7A382E404FFFC850C5115979 /* MBProgressHUD.m */,
+				094DEA14FF9B5C7146C19A8C /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		094DEA14FF9B5C7146C19A8C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B4DD9F3ACE36C0D49201E6E /* Pods-MBProgressHUD.xcconfig */,
+				0FA4A4B6BE5BE412E9D57487 /* Pods-MBProgressHUD-Private.xcconfig */,
+				7B57036972321B39AEE74E2A /* Pods-MBProgressHUD-dummy.m */,
+				24978DCA304F8ECDDE0A6D8A /* Pods-MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		1C40AB43E6F9D27C1427FE91 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD48E9D269687722A7E1B90C /* CoreGraphics.framework */,
+				3665A209DD80C95FBC4739C1 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		07E4B9703C5BD43E921D0AAD /* ZCharts */ = {
+		422482421DBF1E3C294099D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E217ED65AA2D6AA98DC29E15 /* Pod */,
-				A45EDDC42A53BD819501D3D8 /* Support Files */,
-			);
-			name = ZCharts;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		0E748B79C494F3967DFA35A1 /* Bar */ = {
-			isa = PBXGroup;
-			children = (
-				52990997756715368A99F78D /* ZChartsBarDrawView.h */,
-				3C5386C97B8E92A3F5E985BB /* ZChartsBarDrawView.m */,
-			);
-			path = Bar;
-			sourceTree = "<group>";
-		};
-		44DA1126D64B45C33EAA470D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				288080035D5000546AC4F213 /* UIView-ZQuartz.bundle */,
-				0E5FD0DA4E0F2554F47A8B35 /* ZCharts.bundle */,
-				43D4DBB6E9FF82B4921B263F /* ZCharts.bundle */,
-				B7A2607CAD1E8FAE47B2678B /* ZEasing.bundle */,
-				66B0323EB1BB8282FCD787A3 /* libPods-Tests.a */,
-				B75B981D75A14793C8268205 /* libPods-Tests-ZCharts.a */,
-				73441B4BB89BDDF21B2C5788 /* libPods-ZCharts.a */,
-				85288B31E0895D2747FC8852 /* libPods-ZCharts-UIView-ZQuartz.a */,
-				C63FE0F6782DD183D09E025B /* libPods-ZCharts-ZCharts.a */,
-				FE359FF2936206597EE81510 /* libPods-ZCharts-ZEasing.a */,
+				40067F38C6475DE15890F963 /* libPods.a */,
+				A11738BDB9847D44D3279004 /* libPods-MBProgressHUD.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C80CBA6F54F5C066C47520D = {
+		459BC941C5E06D34BF1FD277 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F959F46AC1C1B4153424E11 /* Podfile */,
-				6BCF2480675F3275418525B4 /* Development Pods */,
-				FE317002509727E824DEB2B4 /* Frameworks */,
-				78688203DA71DB0F1A8A1E92 /* Pods */,
-				44DA1126D64B45C33EAA470D /* Products */,
-				8E1D4E070F2126852357A2AD /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		655C26C6340179C8701EEE84 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C8DAEF9AF9744FE7B389A3A3 /* Pods-ZCharts-ZEasing.xcconfig */,
-				33579DAE7D0A20B90FE9A83F /* Pods-ZCharts-ZEasing-Private.xcconfig */,
-				BACB9496C4A70E4A152DE585 /* Pods-ZCharts-ZEasing-dummy.m */,
-				0A0A3A388F17F9ACF1DD1530 /* Pods-ZCharts-ZEasing-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../ZCharts/Example/Pods/Target Support Files/Pods-ZCharts-ZEasing";
-			sourceTree = "<group>";
-		};
-		6BCF2480675F3275418525B4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				07E4B9703C5BD43E921D0AAD /* ZCharts */,
-				F38CE28673189388BB3A42AD /* ZEasing */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6F9D2F5D4DBB7D5BA137AD84 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				BA0D0EB036C0270174C1CFE6 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		78688203DA71DB0F1A8A1E92 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C0862ABBF5ED7A28C372CF8F /* UIView-ZQuartz */,
+				008DE474A8E566BE4DAD7703 /* MBProgressHUD */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8E1D4E070F2126852357A2AD /* Targets Support Files */ = {
+		C256CC8A14D5369B37F9F7D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A263B7A73D09E6D7CDCFD7B /* Pods-Tests */,
-				9C782C3DF321CF14C5039546 /* Pods-ZCharts */,
+				AEE0599BD0BE19EEA246AF9D /* Pods-acknowledgements.markdown */,
+				DF078493150519A28146CF9D /* Pods-acknowledgements.plist */,
+				17F8F6AC0B65DBBBD0EAE5B3 /* Pods-dummy.m */,
+				B20063EF457E4BB3D4FDEE2C /* Pods-environment.h */,
+				326326B58CA429896A1584C9 /* Pods-resources.sh */,
+				520EFA3F100F64162366A030 /* Pods.debug.xcconfig */,
+				D7A5297A43869B4F65C36D1D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		DD8B2A033687E33EC68FFBF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C256CC8A14D5369B37F9F7D4 /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A263B7A73D09E6D7CDCFD7B /* Pods-Tests */ = {
+		DEC123441942CEBD7D34CF42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EB1CCB43948DAD0971D4307 /* Pods-Tests-acknowledgements.markdown */,
-				FA81FF4130595515B56129A4 /* Pods-Tests-acknowledgements.plist */,
-				0B28FF50C1115A3A1CEF1080 /* Pods-Tests-dummy.m */,
-				A3C6870E5107C47E79784E8C /* Pods-Tests-environment.h */,
-				B887C78A0E8D60920F7E92DA /* Pods-Tests-resources.sh */,
-				75625B6BA8396A985E6B1B5C /* Pods-Tests.debug.xcconfig */,
-				CC1725D7649543D9BA8BA81A /* Pods-Tests.release.xcconfig */,
-			);
-			name = "Pods-Tests";
-			path = "Target Support Files/Pods-Tests";
-			sourceTree = "<group>";
-		};
-		9C782C3DF321CF14C5039546 /* Pods-ZCharts */ = {
-			isa = PBXGroup;
-			children = (
-				F027EB1D7D75BB54966567EB /* Pods-ZCharts-acknowledgements.markdown */,
-				A881D58F25577E5021908D33 /* Pods-ZCharts-acknowledgements.plist */,
-				510237BE8B2DFE57CFA1D1C3 /* Pods-ZCharts-dummy.m */,
-				DE9B41C78F72C875614F4048 /* Pods-ZCharts-environment.h */,
-				CB9EADEC886F285BDD729F57 /* Pods-ZCharts-resources.sh */,
-				7C03CDB60FB7A6FCDA4CC0B9 /* Pods-ZCharts.debug.xcconfig */,
-				87663B3326DC789F208C0432 /* Pods-ZCharts.release.xcconfig */,
-			);
-			name = "Pods-ZCharts";
-			path = "Target Support Files/Pods-ZCharts";
-			sourceTree = "<group>";
-		};
-		A45EDDC42A53BD819501D3D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				805548953ABE823EDF4B6C37 /* Pods-Tests-ZCharts.xcconfig */,
-				7EF2E3FDBB4E8399B051529C /* Pods-Tests-ZCharts-Private.xcconfig */,
-				2CCB21D5261CB31B10825609 /* Pods-Tests-ZCharts-dummy.m */,
-				44854F8517ED39A2D5D5EC6A /* Pods-Tests-ZCharts-prefix.pch */,
-				F7CB231C1417A8E0502A1E23 /* Pods-ZCharts-ZCharts.xcconfig */,
-				18C7D9B1B045615C59214A61 /* Pods-ZCharts-ZCharts-Private.xcconfig */,
-				997F31F0FAF427E490EED7F9 /* Pods-ZCharts-ZCharts-dummy.m */,
-				C15AFB03B265489DDC9082E9 /* Pods-ZCharts-ZCharts-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-Tests-ZCharts";
-			sourceTree = "<group>";
-		};
-		BA0D0EB036C0270174C1CFE6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				704C6131A50E34FB220E4FEF /* ZEasing.h */,
-				4153206A73C16B04BD91AF4C /* ZEasing.m */,
-				C47E5288B999E700B2750646 /* ZEasing+Cubic.h */,
-				5216508B25B986B5BFD90940 /* ZEasing+Cubic.m */,
-				5E76BC2A44ED1157E84A21F4 /* ZEasing+Linear.h */,
-				A59E30DA8414014FA0447968 /* ZEasing+Linear.m */,
-				B583DFC626FC7560FF932C86 /* ZEasing+Quadratic.h */,
-				268E8B51A6124BA2B9B96324 /* ZEasing+Quadratic.m */,
-				F9454A60F17440BADA3DC03A /* ZEasing+Quart.h */,
-				95F6C4D50C0E317F994AB7CE /* ZEasing+Quart.m */,
-				8C0F1741B2464481CB209371 /* ZEasing+Quintic.h */,
-				B851FD905BF4FE689896866E /* ZEasing+Quintic.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C0862ABBF5ED7A28C372CF8F /* UIView-ZQuartz */ = {
-			isa = PBXGroup;
-			children = (
-				FAA5E029A6B1126BEF673293 /* UIView+ZQuartz.h */,
-				5ECEDF89F378F6FB3011BD07 /* UIView+ZQuartz.m */,
-				C5068BDA8A39775AE6EB42A7 /* Support Files */,
-			);
-			path = "UIView-ZQuartz";
-			sourceTree = "<group>";
-		};
-		C5068BDA8A39775AE6EB42A7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				07C8ED56CD904AEB48BDF3D3 /* Pods-ZCharts-UIView-ZQuartz.xcconfig */,
-				4C43058C3991D126021E93C3 /* Pods-ZCharts-UIView-ZQuartz-Private.xcconfig */,
-				8C6A6BB75C077BFE06AD9BB1 /* Pods-ZCharts-UIView-ZQuartz-dummy.m */,
-				0DEF2B521A20A5A7BC49C3C6 /* Pods-ZCharts-UIView-ZQuartz-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-ZCharts-UIView-ZQuartz";
-			sourceTree = "<group>";
-		};
-		CA51A48641BB2EE5982C5A82 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				37B08B06227B98E4640B1E8B /* ZChartsBaseView.h */,
-				633A410037F544CEF921271D /* ZChartsBaseView.m */,
-				A24F03AD2337CD3C8E55E974 /* ZChartsDegreeView.h */,
-				1A700138487FC5441AB0ECA0 /* ZChartsDegreeView.m */,
-				8E7889E68313871B0CA1D62D /* ZChartsKit.h */,
-				659CD24A8E16B8A5CE56F41E /* ZChartsModel.h */,
-				D97CFA2D0BDC654E11012AA8 /* ZChartsModel.m */,
-				CDB630F82F2910220A07CABE /* ZChartsScrollView.h */,
-				037F9ECC5F335A4E6055E173 /* ZChartsScrollView.m */,
-				74884A2EB2355315CFB9C4E8 /* ZChartsStyle.h */,
-				81F4D541969E2D23782B23A7 /* ZChartsStyle.m */,
-				0E748B79C494F3967DFA35A1 /* Bar */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E217ED65AA2D6AA98DC29E15 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CA51A48641BB2EE5982C5A82 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		F38CE28673189388BB3A42AD /* ZEasing */ = {
-			isa = PBXGroup;
-			children = (
-				6F9D2F5D4DBB7D5BA137AD84 /* Pod */,
-				655C26C6340179C8701EEE84 /* Support Files */,
-			);
-			name = ZEasing;
-			path = /Users/zhuayi/work/app/ZEasing;
-			sourceTree = "<absolute>";
-		};
-		FE317002509727E824DEB2B4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				05E2C15DFF5E08F4798D038F /* iOS */,
+				1C40AB43E6F9D27C1427FE91 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6656BF978D2BE1D9C73D56C = {
+			isa = PBXGroup;
+			children = (
+				ADED049CD46B083917D059A9 /* Podfile */,
+				DEC123441942CEBD7D34CF42 /* Frameworks */,
+				459BC941C5E06D34BF1FD277 /* Pods */,
+				422482421DBF1E3C294099D2 /* Products */,
+				DD8B2A033687E33EC68FFBF4 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1EE3E9B2B9E616A7B6C64F52 /* Headers */ = {
+		660F024A70A5666C0A72F3DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B4003A597A0BFF3DD36BFE /* ZChartsBarDrawView.h in Headers */,
-				2A1A7331268BAC2C6771F426 /* ZChartsBaseView.h in Headers */,
-				C1D6F4EE85FF256D082163B8 /* ZChartsDegreeView.h in Headers */,
-				99B08F1516BA02789003B9DA /* ZChartsKit.h in Headers */,
-				810BF7A35FCB9B990D295D66 /* ZChartsModel.h in Headers */,
-				174B06FF88F1D5BDB33D5947 /* ZChartsScrollView.h in Headers */,
-				DB27CF97CDC763BB2B19CB2B /* ZChartsStyle.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F210ED83A2CF645C3BAFBCE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7AC488C236F2E640C073F11 /* UIView+ZQuartz.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		497E5A4C1389182FCA4500EA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB4DCED5A3E952010DE793FC /* ZEasing+Cubic.h in Headers */,
-				D598016B4016DD9B52F5CAF4 /* ZEasing+Linear.h in Headers */,
-				571195E021784ED544701A92 /* ZEasing+Quadratic.h in Headers */,
-				699E6C79079818377EB701DD /* ZEasing+Quart.h in Headers */,
-				BF33F99EFBB4479FEBA33050 /* ZEasing+Quintic.h in Headers */,
-				F2EE4BAB0D88737542B89FF6 /* ZEasing.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB42E8F66269DFF90FFAA977 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B38A34DB8CE7E30BDFD0DF53 /* ZChartsBarDrawView.h in Headers */,
-				129CF15A3DD9C6B51E1C6A33 /* ZChartsBaseView.h in Headers */,
-				4BF7DE2B4205857A0DBCB06D /* ZChartsDegreeView.h in Headers */,
-				E90EF7C570DF16B5B39CECC8 /* ZChartsKit.h in Headers */,
-				0EA44A05D2A678B13D5D2196 /* ZChartsModel.h in Headers */,
-				8E52F1788D4A58D997C2E1D2 /* ZChartsScrollView.h in Headers */,
-				EBA7F8934D8A2D20C392DEB8 /* ZChartsStyle.h in Headers */,
+				FFA402DC7C2D3718F179BD51 /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1121DEB53D614A19D5479BFC /* Pods-Tests-ZCharts */ = {
+		586E22AAF04D29FD84235550 /* Pods-MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 207A70F8FF0EAD25E120987D /* Build configuration list for PBXNativeTarget "Pods-Tests-ZCharts" */;
+			buildConfigurationList = EA7B45C19DBDE818CB3BD56C /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */;
 			buildPhases = (
-				F374C7423C9BFAD81A9F341A /* Sources */,
-				DA9A0D3F82B3AB9B4F56FB98 /* Frameworks */,
-				DB42E8F66269DFF90FFAA977 /* Headers */,
+				3BF400630CAA425BE9D837DB /* Sources */,
+				1C9BFE8D1E3354DC232860A4 /* Frameworks */,
+				660F024A70A5666C0A72F3DA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F08A5DDA5021795C072C5FB7 /* PBXTargetDependency */,
 			);
-			name = "Pods-Tests-ZCharts";
-			productName = "Pods-Tests-ZCharts";
-			productReference = B75B981D75A14793C8268205 /* libPods-Tests-ZCharts.a */;
+			name = "Pods-MBProgressHUD";
+			productName = "Pods-MBProgressHUD";
+			productReference = A11738BDB9847D44D3279004 /* libPods-MBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		26E602C4B6E1F900B102B375 /* Pods-ZCharts-ZCharts-ZCharts */ = {
+		B0A3BF51BDD62DB22FE28B40 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9977C916469B09DFB96895A /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZCharts-ZCharts" */;
+			buildConfigurationList = C1379240A829968E11E65800 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				0F48139236095AF96B8F7824 /* Sources */,
-				631B8ED44B99652B434E0F77 /* Frameworks */,
-				3F53D28BF70DB3131B3C0DD2 /* Resources */,
+				2DFCBEFA3AB1758741358C3B /* Sources */,
+				82A4E97F1D4E953C73002C39 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2008718E7B73686CFC8DF8F3 /* PBXTargetDependency */,
 			);
-			name = "Pods-ZCharts-ZCharts-ZCharts";
-			productName = "Pods-ZCharts-ZCharts-ZCharts";
-			productReference = 43D4DBB6E9FF82B4921B263F /* ZCharts.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		3B03072C91193D3AA8413883 /* Pods-ZCharts-ZCharts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E199C8608AA7B6212BA889D /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZCharts" */;
-			buildPhases = (
-				6325F950376714883A0A0031 /* Sources */,
-				541471FFC7AC66B16371C2CC /* Frameworks */,
-				1EE3E9B2B9E616A7B6C64F52 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22A425BB75F720F1B1A8170F /* PBXTargetDependency */,
-			);
-			name = "Pods-ZCharts-ZCharts";
-			productName = "Pods-ZCharts-ZCharts";
-			productReference = C63FE0F6782DD183D09E025B /* libPods-ZCharts-ZCharts.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		437FFD488385B5D8BE8C1B41 /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80EA5622CDC36E0FA4037751 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				4E69E8BE75B751A71F10B294 /* Sources */,
-				06D125DFC5468F90F28B4AB4 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				03EDF98ED2407029ADBA2D17 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = 66B0323EB1BB8282FCD787A3 /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4E5DD45CDBB8B24773042D4B /* Pods-ZCharts-UIView-ZQuartz */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D960BE63EC5D897473807514 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-UIView-ZQuartz" */;
-			buildPhases = (
-				B3684F9AB7D7DE5728E5B9CF /* Sources */,
-				35FC685073EB1C0494E25C7C /* Frameworks */,
-				1F210ED83A2CF645C3BAFBCE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A3416A69F17F1A716DFFB40C /* PBXTargetDependency */,
-			);
-			name = "Pods-ZCharts-UIView-ZQuartz";
-			productName = "Pods-ZCharts-UIView-ZQuartz";
-			productReference = 85288B31E0895D2747FC8852 /* libPods-ZCharts-UIView-ZQuartz.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		53E7563EED76B7893DF48ACA /* Pods-ZCharts-ZEasing */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD4DE4B9B4F106F2F50AD8E3 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZEasing" */;
-			buildPhases = (
-				6BA5F590CE41C610C82F052F /* Sources */,
-				D4B63D73BBBFABAAF996DC80 /* Frameworks */,
-				497E5A4C1389182FCA4500EA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BC9657B1F92BB6D2102B4937 /* PBXTargetDependency */,
-			);
-			name = "Pods-ZCharts-ZEasing";
-			productName = "Pods-ZCharts-ZEasing";
-			productReference = FE359FF2936206597EE81510 /* libPods-ZCharts-ZEasing.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		69520A9CB5331C86ABBF729C /* Pods-ZCharts-ZEasing-ZEasing */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2FDA29F9B4B3C058FDC1F08 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZEasing-ZEasing" */;
-			buildPhases = (
-				D77A36D90196D51BC59EBEBD /* Sources */,
-				F9A167548FFCA67E0CF426E2 /* Frameworks */,
-				50C2850F75DF97033D443D7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ZCharts-ZEasing-ZEasing";
-			productName = "Pods-ZCharts-ZEasing-ZEasing";
-			productReference = B7A2607CAD1E8FAE47B2678B /* ZEasing.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		70E978EC21A3EFACB6E8C82E /* Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3340350351CB48D267B46FF3 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz" */;
-			buildPhases = (
-				D7FD09924E67B57A6681A73C /* Sources */,
-				5EB1042262C07F82B26A5CB2 /* Frameworks */,
-				160B4E52D48E0D69EE20177D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz";
-			productName = "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz";
-			productReference = 288080035D5000546AC4F213 /* UIView-ZQuartz.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		A94237DE080E09FA577655BF /* Pods-Tests-ZCharts-ZCharts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 371B6E964123E67F851994FC /* Build configuration list for PBXNativeTarget "Pods-Tests-ZCharts-ZCharts" */;
-			buildPhases = (
-				31AE63967E9124695CF2AB10 /* Sources */,
-				47D19CAD475E5E78D9B54D86 /* Frameworks */,
-				D654811AFF6B76B20429C38B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Tests-ZCharts-ZCharts";
-			productName = "Pods-Tests-ZCharts-ZCharts";
-			productReference = 0E5FD0DA4E0F2554F47A8B35 /* ZCharts.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		B8FCFB0A1671087F84914931 /* Pods-ZCharts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5EC280DE56E88F772FBA300 /* Build configuration list for PBXNativeTarget "Pods-ZCharts" */;
-			buildPhases = (
-				AB97A4DD57FAC6847706A142 /* Sources */,
-				6998FCB5210B2AA43937CBA9 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DAD5525AAF15DA9251B47005 /* PBXTargetDependency */,
-				CCD06C343E271BF9DADCFBAA /* PBXTargetDependency */,
-				C4728B6FA34C61528B812AA6 /* PBXTargetDependency */,
-			);
-			name = "Pods-ZCharts";
-			productName = "Pods-ZCharts";
-			productReference = 73441B4BB89BDDF21B2C5788 /* libPods-ZCharts.a */;
+			name = Pods;
+			productName = Pods;
+			productReference = 40067F38C6475DE15890F963 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		123A9003BE77F69E189E8ECD /* Project object */ = {
+		5AA41187FA00EA3276ADB912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = FA344AFDB7C2B664CAD9ABDA /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = E8D93DD8AE54F7A1800F4570 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5C80CBA6F54F5C066C47520D;
-			productRefGroup = 44DA1126D64B45C33EAA470D /* Products */;
+			mainGroup = E6656BF978D2BE1D9C73D56C;
+			productRefGroup = 422482421DBF1E3C294099D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				437FFD488385B5D8BE8C1B41 /* Pods-Tests */,
-				1121DEB53D614A19D5479BFC /* Pods-Tests-ZCharts */,
-				A94237DE080E09FA577655BF /* Pods-Tests-ZCharts-ZCharts */,
-				B8FCFB0A1671087F84914931 /* Pods-ZCharts */,
-				4E5DD45CDBB8B24773042D4B /* Pods-ZCharts-UIView-ZQuartz */,
-				70E978EC21A3EFACB6E8C82E /* Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz */,
-				3B03072C91193D3AA8413883 /* Pods-ZCharts-ZCharts */,
-				26E602C4B6E1F900B102B375 /* Pods-ZCharts-ZCharts-ZCharts */,
-				53E7563EED76B7893DF48ACA /* Pods-ZCharts-ZEasing */,
-				69520A9CB5331C86ABBF729C /* Pods-ZCharts-ZEasing-ZEasing */,
+				B0A3BF51BDD62DB22FE28B40 /* Pods */,
+				586E22AAF04D29FD84235550 /* Pods-MBProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		160B4E52D48E0D69EE20177D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F53D28BF70DB3131B3C0DD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50C2850F75DF97033D443D7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D654811AFF6B76B20429C38B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0F48139236095AF96B8F7824 /* Sources */ = {
+		2DFCBEFA3AB1758741358C3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52674F39BEE0D185DC01DDC0 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31AE63967E9124695CF2AB10 /* Sources */ = {
+		3BF400630CAA425BE9D837DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E69E8BE75B751A71F10B294 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D68B8261323D7642679B24F /* Pods-Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6325F950376714883A0A0031 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26060DBE17BEB5CBB9989383 /* Pods-ZCharts-ZCharts-dummy.m in Sources */,
-				ADD9E75ADAB5AB0DD54B12CF /* ZChartsBarDrawView.m in Sources */,
-				272DF2E31E2A180614E810C5 /* ZChartsBaseView.m in Sources */,
-				1C6AC70D742A667F7C18A15E /* ZChartsDegreeView.m in Sources */,
-				04BBFC9BBDAB5BDA0EE8553F /* ZChartsModel.m in Sources */,
-				18CA3D7E22154F3A4AD4F399 /* ZChartsScrollView.m in Sources */,
-				D028B6153E5BC783636AD56C /* ZChartsStyle.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6BA5F590CE41C610C82F052F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04D608CE2D86E19505ED9948 /* Pods-ZCharts-ZEasing-dummy.m in Sources */,
-				4AE5447BAA05C6043385E6AF /* ZEasing+Cubic.m in Sources */,
-				1531941D2ED94987E3EC73D6 /* ZEasing+Linear.m in Sources */,
-				8EF59409B0A85B4F13EA7B4C /* ZEasing+Quadratic.m in Sources */,
-				8AB7938EFA7F625FE4672D1B /* ZEasing+Quart.m in Sources */,
-				02BBA508B15ABA58EBD46A85 /* ZEasing+Quintic.m in Sources */,
-				D348F327A47CCD7D8C051EFE /* ZEasing.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB97A4DD57FAC6847706A142 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0A49AACD3E45FE721DBF53 /* Pods-ZCharts-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3684F9AB7D7DE5728E5B9CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63C265762FB19A62662FAF2A /* Pods-ZCharts-UIView-ZQuartz-dummy.m in Sources */,
-				C45E30F84B9B1C1577D90C82 /* UIView+ZQuartz.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D77A36D90196D51BC59EBEBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7FD09924E67B57A6681A73C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F374C7423C9BFAD81A9F341A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87A3761D97DD08E048E83AE6 /* Pods-Tests-ZCharts-dummy.m in Sources */,
-				E9CBCB7CB33E461AF53F6255 /* ZChartsBarDrawView.m in Sources */,
-				02EF149898B55965E69BA322 /* ZChartsBaseView.m in Sources */,
-				877541467E22DEE113AA3186 /* ZChartsDegreeView.m in Sources */,
-				E815EBDE9F326E20FA724465 /* ZChartsModel.m in Sources */,
-				731E3AB12508E9868BE694DA /* ZChartsScrollView.m in Sources */,
-				E531A21EBACC0CC6245765FF /* ZChartsStyle.m in Sources */,
+				DA8436D72FCF490351212D09 /* MBProgressHUD.m in Sources */,
+				ACC8C52584904EDAA9E00A72 /* Pods-MBProgressHUD-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03EDF98ED2407029ADBA2D17 /* PBXTargetDependency */ = {
+		2008718E7B73686CFC8DF8F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-ZCharts";
-			target = 1121DEB53D614A19D5479BFC /* Pods-Tests-ZCharts */;
-			targetProxy = 26D24ABE39BEA52AAF08E1B5 /* PBXContainerItemProxy */;
-		};
-		22A425BB75F720F1B1A8170F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-ZCharts-ZCharts";
-			target = 26E602C4B6E1F900B102B375 /* Pods-ZCharts-ZCharts-ZCharts */;
-			targetProxy = 18A622934897AEEE9E697DE2 /* PBXContainerItemProxy */;
-		};
-		A3416A69F17F1A716DFFB40C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz";
-			target = 70E978EC21A3EFACB6E8C82E /* Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz */;
-			targetProxy = 4171F2DD79D02C9A00E2AF58 /* PBXContainerItemProxy */;
-		};
-		BC9657B1F92BB6D2102B4937 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-ZEasing-ZEasing";
-			target = 69520A9CB5331C86ABBF729C /* Pods-ZCharts-ZEasing-ZEasing */;
-			targetProxy = 891C0A5CBF67B8DE1A35526F /* PBXContainerItemProxy */;
-		};
-		C4728B6FA34C61528B812AA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-ZEasing";
-			target = 53E7563EED76B7893DF48ACA /* Pods-ZCharts-ZEasing */;
-			targetProxy = 1E4C1D1E65B47028EE9A3D42 /* PBXContainerItemProxy */;
-		};
-		CCD06C343E271BF9DADCFBAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-ZCharts";
-			target = 3B03072C91193D3AA8413883 /* Pods-ZCharts-ZCharts */;
-			targetProxy = 2A0F9C02DBEDED06A87B583F /* PBXContainerItemProxy */;
-		};
-		DAD5525AAF15DA9251B47005 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZCharts-UIView-ZQuartz";
-			target = 4E5DD45CDBB8B24773042D4B /* Pods-ZCharts-UIView-ZQuartz */;
-			targetProxy = CB43B543A1DD6830065AC27C /* PBXContainerItemProxy */;
-		};
-		F08A5DDA5021795C072C5FB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Tests-ZCharts-ZCharts";
-			target = A94237DE080E09FA577655BF /* Pods-Tests-ZCharts-ZCharts */;
-			targetProxy = E784263DF4A719E027FF7210 /* PBXContainerItemProxy */;
+			name = "Pods-MBProgressHUD";
+			target = 586E22AAF04D29FD84235550 /* Pods-MBProgressHUD */;
+			targetProxy = F6DCD98501B553EA0493A64C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1829A07B7D7A0BD1250A9D5A /* Release */ = {
+		2CE83CB9378BDC7C24B904AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87663B3326DC789F208C0432 /* Pods-ZCharts.release.xcconfig */;
+			baseConfigurationReference = D7A5297A43869B4F65C36D1D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -968,7 +278,39 @@
 			};
 			name = Release;
 		};
-		1B8225BE994C354268598F79 /* Debug */ = {
+		47E219B02D209468807AE0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA4A4B6BE5BE412E9D57487 /* Pods-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52694B3D1F8588241DE92AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 520EFA3F100F64162366A030 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		698511752ACAFF8435447A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1007,34 +349,12 @@
 			};
 			name = Debug;
 		};
-		1FC9929A4F0CB3FBA354593D /* Debug */ = {
+		9B673F2E744E9AE3BB6CA0F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA4A4B6BE5BE412E9D57487 /* Pods-MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZEasing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		37EAD91211D6B026233FF1FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "UIView-ZQuartz";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		4E4B73B4D63439DCD87F24C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33579DAE7D0A20B90FE9A83F /* Pods-ZCharts-ZEasing-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-ZEasing/Pods-ZCharts-ZEasing-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -1045,206 +365,7 @@
 			};
 			name = Release;
 		};
-		50E38C8D81BA26F876E7FF9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C7D9B1B045615C59214A61 /* Pods-ZCharts-ZCharts-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		55F628062F53B6EF08957F1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZCharts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		566F22DFFDB4B2142A372787 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C43058C3991D126021E93C3 /* Pods-ZCharts-UIView-ZQuartz-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-UIView-ZQuartz/Pods-ZCharts-UIView-ZQuartz-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6888D7F4942F5DF917EE6244 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZCharts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		69EF90803AF1E1D8DBDA27BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZCharts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		700A06DB5980DC9F5B840B15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "UIView-ZQuartz";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		7F8476ADC890A425C6E00F1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF2E3FDBB4E8399B051529C /* Pods-Tests-ZCharts-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-ZCharts/Pods-Tests-ZCharts-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		88B41C872C5CBDFB16A31829 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C7D9B1B045615C59214A61 /* Pods-ZCharts-ZCharts-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-ZCharts/Pods-ZCharts-ZCharts-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8933CBB906110B418156114B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF2E3FDBB4E8399B051529C /* Pods-Tests-ZCharts-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-ZCharts/Pods-Tests-ZCharts-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AB0EE72D1F051A9E6F550027 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZCharts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B287585A50B45CF980F9EE89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C03CDB60FB7A6FCDA4CC0B9 /* Pods-ZCharts.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CBF9706F4E159BFE99CB0C6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33579DAE7D0A20B90FE9A83F /* Pods-ZCharts-ZEasing-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-ZEasing/Pods-ZCharts-ZEasing-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CE803B09671E90634BF320D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC1725D7649543D9BA8BA81A /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D3A0E9D024DA1040582D7D25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C43058C3991D126021E93C3 /* Pods-ZCharts-UIView-ZQuartz-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZCharts-UIView-ZQuartz/Pods-ZCharts-UIView-ZQuartz-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D4313859A99A4751A602B0FD /* Release */ = {
+		C2CF27836EF69D10CB4BACF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1278,136 +399,37 @@
 			};
 			name = Release;
 		};
-		DC695C80D273F5D9819C91A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZEasing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		EB3EBDA89A272E4A5368903C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75625B6BA8396A985E6B1B5C /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		207A70F8FF0EAD25E120987D /* Build configuration list for PBXNativeTarget "Pods-Tests-ZCharts" */ = {
+		C1379240A829968E11E65800 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8933CBB906110B418156114B /* Debug */,
-				7F8476ADC890A425C6E00F1B /* Release */,
+				52694B3D1F8588241DE92AF2 /* Debug */,
+				2CE83CB9378BDC7C24B904AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E199C8608AA7B6212BA889D /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZCharts" */ = {
+		E8D93DD8AE54F7A1800F4570 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50E38C8D81BA26F876E7FF9C /* Debug */,
-				88B41C872C5CBDFB16A31829 /* Release */,
+				698511752ACAFF8435447A9F /* Debug */,
+				C2CF27836EF69D10CB4BACF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3340350351CB48D267B46FF3 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-UIView-ZQuartz-UIView-ZQuartz" */ = {
+		EA7B45C19DBDE818CB3BD56C /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37EAD91211D6B026233FF1FD /* Debug */,
-				700A06DB5980DC9F5B840B15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		371B6E964123E67F851994FC /* Build configuration list for PBXNativeTarget "Pods-Tests-ZCharts-ZCharts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69EF90803AF1E1D8DBDA27BE /* Debug */,
-				AB0EE72D1F051A9E6F550027 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80EA5622CDC36E0FA4037751 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB3EBDA89A272E4A5368903C /* Debug */,
-				CE803B09671E90634BF320D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5EC280DE56E88F772FBA300 /* Build configuration list for PBXNativeTarget "Pods-ZCharts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B287585A50B45CF980F9EE89 /* Debug */,
-				1829A07B7D7A0BD1250A9D5A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D960BE63EC5D897473807514 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-UIView-ZQuartz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				566F22DFFDB4B2142A372787 /* Debug */,
-				D3A0E9D024DA1040582D7D25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9977C916469B09DFB96895A /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZCharts-ZCharts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6888D7F4942F5DF917EE6244 /* Debug */,
-				55F628062F53B6EF08957F1D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD4DE4B9B4F106F2F50AD8E3 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZEasing" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBF9706F4E159BFE99CB0C6E /* Debug */,
-				4E4B73B4D63439DCD87F24C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2FDA29F9B4B3C058FDC1F08 /* Build configuration list for PBXNativeTarget "Pods-ZCharts-ZEasing-ZEasing" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FC9929A4F0CB3FBA354593D /* Debug */,
-				DC695C80D273F5D9819C91A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA344AFDB7C2B664CAD9ABDA /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B8225BE994C354268598F79 /* Debug */,
-				D4313859A99A4751A602B0FD /* Release */,
+				47E219B02D209468807AE0CC /* Debug */,
+				9B673F2E744E9AE3BB6CA0F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 123A9003BE77F69E189E8ECD /* Project object */;
+	rootObject = 5AA41187FA00EA3276ADB912 /* Project object */;
 }

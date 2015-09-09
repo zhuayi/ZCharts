@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZCharts"
-  s.version          = "1.1.5"
+  s.version          = "2.0.0"
   s.summary          = "基于drawRect的 一款柱状图."
   s.description      = <<-DESC
                        基于drawRect的 一款柱状图
@@ -23,11 +23,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'ZCharts' => ['Pod/Assets/*.png']
-  }
+  s.resource_bundles = { 'ZCharts' => ['Pod/Assets/*'] }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  #s.dependency 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
 end

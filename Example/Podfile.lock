@@ -1,29 +1,10 @@
 PODS:
-  - UIView-ZQuartz (0.3.0)
-  - ZCharts (0.7.0)
-  - ZEasing (0.1.0)
+  - MBProgressHUD (0.9.1)
 
 DEPENDENCIES:
-  - UIView-ZQuartz (from `https://github.com/zhuayi/UIView-ZQuartz.git`)
-  - ZCharts (from `../`)
-  - ZEasing (from `/Users/zhuayi/work/app/ZEasing`)
-
-EXTERNAL SOURCES:
-  UIView-ZQuartz:
-    :git: https://github.com/zhuayi/UIView-ZQuartz.git
-  ZCharts:
-    :path: ../
-  ZEasing:
-    :path: /Users/zhuayi/work/app/ZEasing
-
-CHECKOUT OPTIONS:
-  UIView-ZQuartz:
-    :commit: c3abe0fa6fb49f9d78fd4ed658b812f1650caa32
-    :git: https://github.com/zhuayi/UIView-ZQuartz.git
+  - MBProgressHUD (~> 0.9.1)
 
 SPEC CHECKSUMS:
-  UIView-ZQuartz: db85b3adcd24dc0c229a03394811b8b0959da798
-  ZCharts: 87e2eb6c0874eb4d9f33975c8665ca2967ed7d43
-  ZEasing: 13c7508bb6a1bcf8d508af38b68a78a39c8762bd
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
 
-COCOAPODS: 0.37.0.beta.1
+COCOAPODS: 0.37.2

@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZChartsKit.h"
 
-@interface ZViewController : UIViewController<ZChartsBaseViewDelegate>
+@interface ZViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end

@@ -1,17 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
 
-target 'ZCharts', :exclusive => true do
-  pod "ZCharts", :path => "../"
-  
-  ## 绘制库
-  pod 'UIView-ZQuartz', :git => 'https://github.com/zhuayi/UIView-ZQuartz.git'
-  
-  pod 'ZEasing', :path => '/Users/zhuayi/work/app/ZEasing'
-  
-end
+platform :ios , 7.1
 
-target 'Tests', :exclusive => true do
-  pod "ZCharts", :path => "../"
-
-  
-end
+#target 'ZCharts', :exclusive => true do
+#  pod "ZCharts", :path => "../"
+  pod 'MBProgressHUD', '~> 0.9.1'
+#end
