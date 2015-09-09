@@ -14,7 +14,7 @@ IOSLib is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'IOSLib/Base', :svn => 'https://svn.baidu.com/bdg/trunk/common/ioslib'
+pod 'ZChars', :git => 'https://github.com/zhuayi/ZCharts.git'
 ```
 
 ## Author
