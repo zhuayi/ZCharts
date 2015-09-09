@@ -132,7 +132,6 @@
 
 - (UIImageView *)paopaoViewInZCharsManager:(ZCharsManager *)zcharsManager {
     
-    return nil;
     return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ZcharsPaopao"]];
 }
 
