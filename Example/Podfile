@@ -1,7 +1,4 @@
 
 platform :ios , 7.1
 
-#target 'ZCharts', :exclusive => true do
-#  pod "ZCharts", :path => "../"
-  pod 'MBProgressHUD', '~> 0.9.1'
-#end
+pod "ZCharts", :path => "../"
