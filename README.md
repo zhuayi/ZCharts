@@ -100,6 +100,32 @@ zcharsManager.zcharsType = ZCharsTypeLine;
 - (NSString *)xAxisOflineNumberZCharsManager:(ZCharsLineViewCell *)cell lineNumber:(NSInteger)lineNumber
 ```
 
+###自定义style
+
+**自定义左侧刻度字体样式**
+```objective-c
+NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
+paragraph.alignment = NSTextAlignmentRight;
+NSDictionary *fontDict = @{
+    NSFontAttributeName :            [UIFont systemFontOfSize:10.0],
+    NSForegroundColorAttributeName : UIColorFromRGB(0xa0a0a0),
+    NSParagraphStyleAttributeName:    paragraph
+};
+zcharsManager.leftView.fontDict = fontDict;
+```
+
+**自定义X 轴字体样式**
+```objective-c
+
+NSMutableParagraphStyle *paragraph2 = [[NSMutableParagraphStyle alloc] init];
+paragraph2.alignment = NSTextAlignmentLeft;
+NSDictionary *fontDict2 = @{
+    NSFontAttributeName :            [UIFont systemFontOfSize:10.0],
+    NSForegroundColorAttributeName : UIColorFromRGB(0xa0a0a0),
+    NSParagraphStyleAttributeName:    paragraph2
+};
+zcharsManager.rightView.XAxisFont = fontDict2;
+```
 ### 曲线图
 ![enter image description here](https://raw.githubusercontent.com/zhuayi/ZCharts/master/line.gif)
 
