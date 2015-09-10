@@ -101,7 +101,7 @@ zcharsManager.zcharsType = ZCharsTypeLine;
 ```
 
 ### 曲线图
-![enter image description here](https://raw.githubusercontent.com/zhuayi/ZCharts/master/line.png)
+![enter image description here](https://raw.githubusercontent.com/zhuayi/ZCharts/master/line.gif)
 
 ## Author
 
