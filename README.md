@@ -4,6 +4,9 @@
 
 ## Usage
 
+ZCharts 是一个图表库， 能够很简单便捷的为应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。 ZCharts支持的图表类型有曲线图. 
+区域图、柱状图、饼状图、散状点图*稍后支持
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 
